@@ -1,0 +1,2 @@
+record_id,date,unit_id,role,tip_id,reference_instrument,reference_calibration,point_C,indicated_C,reference_C,uncertainty_C,operator,disposition
+UNMEASURED,,,,,,,,,,,,

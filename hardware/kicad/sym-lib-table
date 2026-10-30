@@ -1,0 +1,1 @@
+(sym_lib_table (version 7) (lib (name "AGNI") (type "KiCad") (uri "${KIPRJMOD}/AGNI.kicad_sym") (options "") (descr "Project-local generic passive terminal symbols")))

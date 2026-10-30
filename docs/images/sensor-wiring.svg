@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="1400" height="1050" preserveAspectRatio="xMinYMin meet" viewBox="0 0 1400 1050" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="1400" height="1050"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-1050)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="1400" height="1050" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="40" y="1000" style="font-family: Helvetica-Bold; font-size: 27px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,2000) scale(1,-1)">Two separate interfaces and two four-wire Pt1000 elements</text>
+			<text x="40" y="965" style="font-family: Helvetica; font-size: 16px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,1930) scale(1,-1)">Net/terminal diagram; physical sensor lead colours and package must be verified with the supplier.</text>
+			<rect x="45" y="620" width="260" height="270" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,96%,97%); fill-rule: evenodd;"/>
+			<rect x="430" y="610" width="330" height="280" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,96%,97%); fill-rule: evenodd;"/>
+			<text x="60" y="862" style="font-family: Helvetica-Bold; font-size: 20px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,1724) scale(1,-1)">MAIN PICO</text>
+			<text x="450" y="862" style="font-family: Helvetica-Bold; font-size: 18px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,1724) scale(1,-1)">MAX31865 / Pt1000 board</text>
+			<text x="60" y="820" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,1640) scale(1,-1)">9_GP6</text>
+			<text x="450" y="820" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,1640) scale(1,-1)">SCK</text>
+			<polyline points="305 825, 430 825" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: None; fill-rule: evenodd;"/>
+			<text x="310" y="832" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,1664) scale(1,-1)">MAIN_SCK</text>
+			<text x="60" y="790" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,1580) scale(1,-1)">10_GP7</text>
+			<text x="450" y="790" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,1580) scale(1,-1)">SDI</text>
+			<polyline points="305 795, 430 795" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: None; fill-rule: evenodd;"/>
+			<text x="310" y="802" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,1604) scale(1,-1)">MAIN_MOSI</text>
+			<text x="60" y="760" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,1520) scale(1,-1)">6_GP4</text>
+			<text x="450" y="760" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,1520) scale(1,-1)">SDO</text>
+			<polyline points="305 765, 430 765" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: None; fill-rule: evenodd;"/>
+			<text x="310" y="772" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,1544) scale(1,-1)">MAIN_MISO</text>
+			<text x="60" y="730" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,1460) scale(1,-1)">7_GP5</text>
+			<text x="450" y="730" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,1460) scale(1,-1)">CS</text>
+			<polyline points="305 735, 430 735" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: None; fill-rule: evenodd;"/>
+			<text x="310" y="742" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,1484) scale(1,-1)">MAIN_CS</text>
+			<text x="60" y="700" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,1400) scale(1,-1)">36_3V3_OUT</text>
+			<text x="450" y="700" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,1400) scale(1,-1)">VIN</text>
+			<polyline points="305 705, 430 705" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: None; fill-rule: evenodd;"/>
+			<text x="310" y="712" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,1424) scale(1,-1)">3V3_MAIN</text>
+			<text x="60" y="670" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,1340) scale(1,-1)">38_GND</text>
+			<text x="450" y="670" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,1340) scale(1,-1)">GND</text>
+			<polyline points="305 675, 430 675" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: None; fill-rule: evenodd;"/>
+			<text x="310" y="682" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,1364) scale(1,-1)">GND</text>
+			<text x="450" y="630" style="font-family: Helvetica; font-size: 13px;fill: rgb(63%,24%,25%); stroke:none;" transform="translate(0,1260) scale(1,-1)">3Vo: leave unused</text>
+			<text x="660" y="815" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,1630) scale(1,-1)">F+</text>
+			<polyline points="760 820, 930 820" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: None; fill-rule: evenodd;"/>
+			<text x="780" y="828" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,1656) scale(1,-1)">END_A_FORCE</text>
+			<text x="660" y="775" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,1550) scale(1,-1)">RTD+</text>
+			<polyline points="760 780, 930 780" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: None; fill-rule: evenodd;"/>
+			<text x="780" y="788" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,1576) scale(1,-1)">END_A_SENSE</text>
+			<text x="660" y="695" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,1390) scale(1,-1)">RTD-</text>
+			<polyline points="760 700, 930 700" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: None; fill-rule: evenodd;"/>
+			<text x="780" y="708" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,1416) scale(1,-1)">END_B_SENSE</text>
+			<text x="660" y="655" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,1310) scale(1,-1)">F-</text>
+			<polyline points="760 660, 930 660" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: None; fill-rule: evenodd;"/>
+			<text x="780" y="668" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,1336) scale(1,-1)">END_B_FORCE</text>
+			<polyline points="930 820, 965 820, 965 780, 930 780" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: None; fill-rule: evenodd;"/>
+			<polyline points="930 700, 965 700, 965 660, 930 660" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: None; fill-rule: evenodd;"/>
+			<polyline points="965 800, 1010 800, 1010 765" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: None; fill-rule: evenodd;"/>
+			<rect x="998" y="715" width="24" height="50" style="stroke: rgb(64%,42%,13%); stroke-linecap: butt; stroke-width: 2; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<polyline points="1010 715, 1010 680, 965 680" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: None; fill-rule: evenodd;"/>
+			<text x="1050" y="745" style="font-family: Helvetica-Bold; font-size: 15px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,1490) scale(1,-1)">ONE Pt1000 element</text>
+			<text x="1050" y="720" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,1440) scale(1,-1)">Two leads per end</text>
+			<text x="60" y="570" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,1140) scale(1,-1)">Do not join the MAIN and SUP 3V3_OUT nets. Grounds are common; sensors and interfaces remain separate.</text>
+			<rect x="45" y="200" width="260" height="270" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,96%,97%); fill-rule: evenodd;"/>
+			<rect x="430" y="190" width="330" height="280" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 1; fill: rgb(93%,96%,97%); fill-rule: evenodd;"/>
+			<text x="60" y="442" style="font-family: Helvetica-Bold; font-size: 20px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,884) scale(1,-1)">SUP PICO</text>
+			<text x="450" y="442" style="font-family: Helvetica-Bold; font-size: 18px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,884) scale(1,-1)">MAX31865 / Pt1000 board</text>
+			<text x="60" y="400" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,800) scale(1,-1)">9_GP6</text>
+			<text x="450" y="400" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,800) scale(1,-1)">SCK</text>
+			<polyline points="305 405, 430 405" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: None; fill-rule: evenodd;"/>
+			<text x="310" y="412" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,824) scale(1,-1)">SUP_SCK</text>
+			<text x="60" y="370" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,740) scale(1,-1)">10_GP7</text>
+			<text x="450" y="370" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,740) scale(1,-1)">SDI</text>
+			<polyline points="305 375, 430 375" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: None; fill-rule: evenodd;"/>
+			<text x="310" y="382" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,764) scale(1,-1)">SUP_MOSI</text>
+			<text x="60" y="340" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,680) scale(1,-1)">6_GP4</text>
+			<text x="450" y="340" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,680) scale(1,-1)">SDO</text>
+			<polyline points="305 345, 430 345" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: None; fill-rule: evenodd;"/>
+			<text x="310" y="352" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,704) scale(1,-1)">SUP_MISO</text>
+			<text x="60" y="310" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,620) scale(1,-1)">7_GP5</text>
+			<text x="450" y="310" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,620) scale(1,-1)">CS</text>
+			<polyline points="305 315, 430 315" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: None; fill-rule: evenodd;"/>
+			<text x="310" y="322" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,644) scale(1,-1)">SUP_CS</text>
+			<text x="60" y="280" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,560) scale(1,-1)">36_3V3_OUT</text>
+			<text x="450" y="280" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,560) scale(1,-1)">VIN</text>
+			<polyline points="305 285, 430 285" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: None; fill-rule: evenodd;"/>
+			<text x="310" y="292" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,584) scale(1,-1)">3V3_SUP</text>
+			<text x="60" y="250" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,500) scale(1,-1)">38_GND</text>
+			<text x="450" y="250" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,500) scale(1,-1)">GND</text>
+			<polyline points="305 255, 430 255" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: None; fill-rule: evenodd;"/>
+			<text x="310" y="262" style="font-family: Helvetica; font-size: 10px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,524) scale(1,-1)">GND</text>
+			<text x="450" y="210" style="font-family: Helvetica; font-size: 13px;fill: rgb(63%,24%,25%); stroke:none;" transform="translate(0,420) scale(1,-1)">3Vo: leave unused</text>
+			<text x="660" y="395" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,790) scale(1,-1)">F+</text>
+			<polyline points="760 400, 930 400" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: None; fill-rule: evenodd;"/>
+			<text x="780" y="408" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,816) scale(1,-1)">END_A_FORCE</text>
+			<text x="660" y="355" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,710) scale(1,-1)">RTD+</text>
+			<polyline points="760 360, 930 360" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: None; fill-rule: evenodd;"/>
+			<text x="780" y="368" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,736) scale(1,-1)">END_A_SENSE</text>
+			<text x="660" y="275" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,550) scale(1,-1)">RTD-</text>
+			<polyline points="760 280, 930 280" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: None; fill-rule: evenodd;"/>
+			<text x="780" y="288" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,576) scale(1,-1)">END_B_SENSE</text>
+			<text x="660" y="235" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,470) scale(1,-1)">F-</text>
+			<polyline points="760 240, 930 240" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: None; fill-rule: evenodd;"/>
+			<text x="780" y="248" style="font-family: Helvetica; font-size: 11px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,496) scale(1,-1)">END_B_FORCE</text>
+			<polyline points="930 400, 965 400, 965 360, 930 360" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: None; fill-rule: evenodd;"/>
+			<polyline points="930 280, 965 280, 965 240, 930 240" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: None; fill-rule: evenodd;"/>
+			<polyline points="965 380, 1010 380, 1010 345" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: None; fill-rule: evenodd;"/>
+			<rect x="998" y="295" width="24" height="50" style="stroke: rgb(64%,42%,13%); stroke-linecap: butt; stroke-width: 2; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<polyline points="1010 295, 1010 260, 965 260" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: None; fill-rule: evenodd;"/>
+			<text x="1050" y="325" style="font-family: Helvetica-Bold; font-size: 15px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,650) scale(1,-1)">ONE Pt1000 element</text>
+			<text x="1050" y="300" style="font-family: Helvetica; font-size: 13px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,600) scale(1,-1)">Two leads per end</text>
+			<text x="60" y="150" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,21%,28%); stroke:none;" transform="translate(0,300) scale(1,-1)">Do not join the MAIN and SUP 3V3_OUT nets. Grounds are common; sensors and interfaces remain separate.</text>
+			<text x="40" y="60" style="font-family: Helvetica; font-size: 14px;fill: rgb(63%,24%,25%); stroke:none;" transform="translate(0,120) scale(1,-1)">This drawing defines circuit connections. Sensor retention, insulation, face temperature mapping and physical wiring tests remain open.</text>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,27 @@
+{
+  "revision": "P3R1 / 0.5.0",
+  "units": "mm",
+  "status": "native mesh export and dimension checks only; physical fit untested",
+  "housing_outer": [180, 120, 65],
+  "wall": 3,
+  "lid_thickness": 3,
+  "carrier_size": [160, 100, 1.6],
+  "carrier_origin_in_housing": [10, 10, 9],
+  "carrier_mounts_in_board_coordinates": [[5, 5], [155, 5], [5, 95], [155, 95]],
+  "carrier_mount_hole_diameter": 3.2,
+  "housing_carrier_mounts": [[15, 15], [165, 15], [15, 105], [165, 105]],
+  "lid_screws": [[7, 7], [173, 7], [7, 113], [173, 113]],
+  "prototype_fasteners": {
+    "carrier": "4 x M3 x 6 pan head into prototype 2.5 mm pilot posts; qualify thread engagement",
+    "lid": "4 x M3 x 10 pan head into prototype pilot posts",
+    "harness_clamp": "2 x M3 x 10 with washers; use insulating grommet and verify cable retention"
+  },
+  "panel_interfaces": {
+    "presets": "five 8.2 mm bores; exact selected switch must fit",
+    "arm_heat_cool": "three 12.2 mm bores; COOL requires DPDT momentary contact and verified coil current rating",
+    "oled": "30 x 18 window and adjustable adapter rails; measure actual current Adafruit 326 revision before producing its adapter",
+    "harness": "24 mm open slot with split cover; no ingress or retention rating established"
+  },
+  "excluded_from_housing": ["heater and tip", "battery", "charger", "power switch stage", "relay", "RTD breakouts"],
+  "material": "fit model only; printed thermoplastic has no qualified heat/flame/reprocessing performance"
+}

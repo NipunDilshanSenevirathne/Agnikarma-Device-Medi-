@@ -1,0 +1,8 @@
+Reference,Quantity,Specification,Use_or_review
+PCB_CARRIER,1,"AGNI P3R1; 160 x 100 mm; 2-layer FR4; nominal 1.6 mm; 35 um copper; mask both sides; top silkscreen","Fabrication candidate only; independent CAM and physical footprint review before order"
+A1/A2 sockets,4,"1x20 female socket strip; 2.54 mm pitch; 0.64 mm square-pin compatible; straight through-hole; 1.0 mm PCB drill","Two strips per Pico; choose matched stack height; verify orientation and engagement"
+J1/J2/J3/J4,4,"1x20 straight male header; 2.54 mm pitch; 0.64 mm square posts; 1.0 mm drill","Low-current external breakouts; external 1k branches and all other circuits still required"
+J5,1,"Phoenix Contact 1715721 MKDS 1.5/2-5.08; 2-position; 5.08 mm pitch; 1.3 mm drill","Pin 1 GND; pin 2 regulated 5 V only; confirm actual footprint and torque against current supplier drawing"
+Carrier screws,4,"M3 x 6 pan head; insulating washers as needed","Fit model pilot posts; check protrusion and engagement"
+Lid screws,4,"M3 x 10 pan head","Fit model pilot posts; qualify repeated use"
+Clamp screws,2,"M3 x 10 pan head with washers","Check cable retention; insulating grommet required"

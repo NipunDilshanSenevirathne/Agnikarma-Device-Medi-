@@ -1,0 +1,2 @@
+# Safety and vulnerability reporting
+Report reproducible software/control faults with revision, inputs, expected output and observed output. Do not attach patient information, private credentials or identifying calibration records. Stop operating affected hardware until the issue is assessed. This repository provides no clinical incident-reporting service or emergency support. The owner must add a private contact and jurisdiction-specific reporting process before any deployment.

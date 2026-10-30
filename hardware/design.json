@@ -1,0 +1,819 @@
+{
+  "revision": "P3R1-native-CAD-2026-10-31",
+  "status": "electrical definition for bench assembly; no physical verification",
+  "components": [
+    {
+      "ref": "A1",
+      "value": "Raspberry Pi Pico MAIN",
+      "pins": {
+        "39_VSYS": "5V",
+        "38_GND": "GND",
+        "36_3V3_OUT": "3V3_MAIN",
+        "1_GP0": "MAIN_TX",
+        "2_GP1": "MAIN_RX",
+        "4_GP2": "OLED_SDA",
+        "5_GP3": "OLED_SCL",
+        "6_GP4": "MAIN_MISO",
+        "7_GP5": "MAIN_CS",
+        "9_GP6": "MAIN_SCK",
+        "10_GP7": "MAIN_MOSI",
+        "11_GP8": "MAIN_KEY_50",
+        "12_GP9": "MAIN_KEY_100",
+        "14_GP10": "MAIN_KEY_150",
+        "15_GP11": "MAIN_KEY_200",
+        "16_GP12": "MAIN_KEY_250",
+        "19_GP14": "MAIN_KEY_COOL",
+        "20_GP15": "MAIN_KEY_HEAT",
+        "21_GP16": "MAIN_KEY_ARM",
+        "22_GP17": "MAIN_KEY_DOCK",
+        "24_GP18": "MAIN_KEY_TIP",
+        "25_GP19": "MAIN_PULSE_IN",
+        "26_GP20": "MAIN_PULSE_OUT",
+        "27_GP21": "PWM_INPUT",
+        "31_GP26": "MAIN_PACK_ADC",
+        "32_GP27": "MAIN_NTC_ADC",
+        "34_GP28": "MAIN_ID_ADC",
+        "3_GND": "GND",
+        "8_GND": "GND",
+        "13_GND": "GND",
+        "18_GND": "GND",
+        "23_GND": "GND",
+        "28_GND": "GND",
+        "33_GND": "GND"
+      },
+      "notes": "Full GPIO schedule is in pinmap.csv; USB disconnected during powered heater tests."
+    },
+    {
+      "ref": "A2",
+      "value": "Raspberry Pi Pico SUPERVISOR",
+      "pins": {
+        "39_VSYS": "5V",
+        "38_GND": "GND",
+        "36_3V3_OUT": "3V3_SUP",
+        "1_GP0": "SUP_TX",
+        "2_GP1": "SUP_RX",
+        "6_GP4": "SUP_MISO",
+        "7_GP5": "SUP_CS",
+        "9_GP6": "SUP_SCK",
+        "10_GP7": "SUP_MOSI",
+        "11_GP8": "SUP_KEY_50",
+        "12_GP9": "SUP_KEY_100",
+        "14_GP10": "SUP_KEY_150",
+        "15_GP11": "SUP_KEY_200",
+        "16_GP12": "SUP_KEY_250",
+        "19_GP14": "SUP_KEY_COOL",
+        "20_GP15": "SUP_KEY_HEAT",
+        "21_GP16": "SUP_KEY_ARM",
+        "22_GP17": "SUP_KEY_DOCK",
+        "24_GP18": "SUP_KEY_TIP",
+        "25_GP19": "SUP_PULSE_IN",
+        "26_GP20": "SUP_PULSE_OUT",
+        "27_GP21": "SUP_RELAY_OUTPUT",
+        "31_GP26": "SUP_PACK_ADC",
+        "32_GP27": "SUP_NTC_ADC",
+        "34_GP28": "SUP_ID_ADC",
+        "3_GND": "GND",
+        "8_GND": "GND",
+        "13_GND": "GND",
+        "18_GND": "GND",
+        "23_GND": "GND",
+        "28_GND": "GND",
+        "33_GND": "GND"
+      },
+      "notes": "Do not tie the two 3V3 outputs together."
+    },
+    {
+      "ref": "PS1",
+      "value": "Pololu D24V22F5 / 2858",
+      "pins": {
+        "VIN": "PACK_FUSED",
+        "GND": "GND",
+        "VOUT": "5V"
+      },
+      "notes": ""
+    },
+    {
+      "ref": "U1",
+      "value": "TC4420CPA non-inverting PDIP-8",
+      "pins": {
+        "1": "5V",
+        "2": "PWM_INPUT",
+        "3": "NC_U1_3",
+        "4": "GND",
+        "5": "GND",
+        "6": "DRIVE",
+        "7": "DRIVE",
+        "8": "5V"
+      },
+      "notes": "Duplicate supply/output pins connected. Verify actual package before assembly."
+    },
+    {
+      "ref": "Q1",
+      "value": "Infineon IRLZ44NPBF TO-220",
+      "pins": {
+        "1_GATE": "MOS_GATE",
+        "2_DRAIN": "HEAT_MINUS",
+        "3_SOURCE": "GND",
+        "TAB": "HEAT_MINUS"
+      },
+      "notes": "Drive at 5V via U1; tab is live drain. Thermally characterize and insulate exposed metal."
+    },
+    {
+      "ref": "R1",
+      "value": "10 ohm 0.25W 1%",
+      "pins": {
+        "1": "DRIVE",
+        "2": "MOS_GATE"
+      },
+      "notes": ""
+    },
+    {
+      "ref": "R2",
+      "value": "100k ohm 0.25W 1%",
+      "pins": {
+        "1": "MOS_GATE",
+        "2": "GND"
+      },
+      "notes": ""
+    },
+    {
+      "ref": "R3",
+      "value": "100k ohm 0.25W 1%",
+      "pins": {
+        "1": "PWM_INPUT",
+        "2": "GND"
+      },
+      "notes": ""
+    },
+    {
+      "ref": "C1",
+      "value": "100nF 25V X7R",
+      "pins": {
+        "1": "5V",
+        "2": "GND"
+      },
+      "notes": "At U1 pins; short high-frequency bypass loop."
+    },
+    {
+      "ref": "C2",
+      "value": "1uF 25V X7R",
+      "pins": {
+        "1": "5V",
+        "2": "GND"
+      },
+      "notes": "At U1 supply; final placement reviewed with driver datasheet."
+    },
+    {
+      "ref": "C3",
+      "value": "100uF 16V low-ESR electrolytic",
+      "pins": {
+        "POS": "5V",
+        "NEG": "GND"
+      },
+      "notes": ""
+    },
+    {
+      "ref": "K1",
+      "value": "Omron G5LE-1-DC5",
+      "pins": {
+        "COIL_A": "COIL_PLUS",
+        "COIL_B": "COIL_MINUS",
+        "COM": "PACK_FUSED",
+        "NO": "HEAT_PLUS",
+        "NC": "NC_K1"
+      },
+      "notes": "Bench high-side disconnect; flyback diode affects release time. Not a safety-rated redundant relay."
+    },
+    {
+      "ref": "Q2",
+      "value": "onsemi PN2222ABU TO-92",
+      "pins": {
+        "1_E": "GND",
+        "2_B": "RELAY_BASE",
+        "3_C": "COIL_MINUS"
+      },
+      "notes": "Use this exact pinout; P2N2222A has a different mapping."
+    },
+    {
+      "ref": "R4",
+      "value": "330 ohm 0.25W 1%",
+      "pins": {
+        "1": "SUP_RELAY_OUTPUT",
+        "2": "RELAY_BASE"
+      },
+      "notes": ""
+    },
+    {
+      "ref": "R5",
+      "value": "100k ohm 0.25W 1%",
+      "pins": {
+        "1": "RELAY_BASE",
+        "2": "GND"
+      },
+      "notes": ""
+    },
+    {
+      "ref": "D1",
+      "value": "1N4007",
+      "pins": {
+        "ANODE": "COIL_MINUS",
+        "CATHODE": "COIL_PLUS"
+      },
+      "notes": "Across relay coil, after physical interlocks."
+    },
+    {
+      "ref": "S_COOL",
+      "value": "DPDT momentary pushbutton",
+      "pins": {
+        "A_COM": "5V",
+        "A_NC": "COOL_NC_OUT",
+        "A_NO": "NC_COOL_A",
+        "B_COM": "GND",
+        "B_NO": "COOL_LOGIC",
+        "B_NC": "NC_COOL_B"
+      },
+      "notes": "Pole A removes coil supply when pressed; pole B active-low to both controllers via branch resistors."
+    },
+    {
+      "ref": "S_DOCK",
+      "value": "Two-pole dock detect switch",
+      "pins": {
+        "A_COM": "COOL_NC_OUT",
+        "A_NC": "DOCK_NC_OUT",
+        "A_NO": "NC_DOCK_A",
+        "B_COM": "GND",
+        "B_NO": "DOCK_LOGIC",
+        "B_NC": "NC_DOCK_B"
+      },
+      "notes": ""
+    },
+    {
+      "ref": "S_TIP",
+      "value": "Two-pole cartridge lock switch",
+      "pins": {
+        "A_COM": "DOCK_NC_OUT",
+        "A_NO": "COIL_PLUS",
+        "A_NC": "NC_TIP_A",
+        "B_COM": "GND",
+        "B_NO": "TIP_PRESENT",
+        "B_NC": "NC_TIP_B"
+      },
+      "notes": "Closes only on positively locked cartridge; validate physical sequencing."
+    },
+    {
+      "ref": "F1",
+      "value": "5A fuse, DC-rated holder",
+      "pins": {
+        "IN": "PACK_PLUS",
+        "OUT": "PACK_FUSED"
+      },
+      "notes": "Starting selection; coordinate fuse curve with pack, wiring, contacts and fault tests."
+    },
+    {
+      "ref": "J_PACK",
+      "value": "Qualified 2S protected pack / bench PSU",
+      "pins": {
+        "PLUS": "PACK_PLUS",
+        "MINUS": "GND"
+      },
+      "notes": "Pack requires supplier qualification; begin with a guarded current-limited bench supply."
+    },
+    {
+      "ref": "H_TEST",
+      "value": "2.2 ohm >=100W chassis load on specified heat sink",
+      "pins": {
+        "1": "HEAT_PLUS",
+        "2": "HEAT_MINUS"
+      },
+      "notes": "The resistor is a nonclinical commissioning load, not a medical tip."
+    },
+    {
+      "ref": "RTD_MAIN",
+      "value": "Adafruit 3648 Pt1000 MAX31865 breakout",
+      "pins": {
+        "VIN": "3V3_MAIN",
+        "GND": "GND",
+        "SCK": "MAIN_SCK",
+        "SDI": "MAIN_MOSI",
+        "SDO": "MAIN_MISO",
+        "CS": "MAIN_CS",
+        "F+": "MAIN_RTD_FORCE_PLUS",
+        "RTD+": "MAIN_RTD_SENSE_PLUS",
+        "RTD-": "MAIN_RTD_SENSE_MINUS",
+        "F-": "MAIN_RTD_FORCE_MINUS",
+        "3Vo": "NC_MAIN_RTD_3VO"
+      },
+      "notes": "4-wire sensor and 4.3k reference version. Module internals remain manufacturer controlled. Leave 3Vo unused; sensor terminals now explicit. Keep 4-wire configuration jumpers as supplied."
+    },
+    {
+      "ref": "R_PACK_TOP_MAIN",
+      "value": "100k ohm 0.25W 1%",
+      "pins": {
+        "1": "PACK_FUSED",
+        "2": "MAIN_PACK_DIV"
+      },
+      "notes": ""
+    },
+    {
+      "ref": "R_PACK_BOTTOM_MAIN",
+      "value": "39k ohm 0.25W 1%",
+      "pins": {
+        "1": "MAIN_PACK_DIV",
+        "2": "GND"
+      },
+      "notes": ""
+    },
+    {
+      "ref": "R_PACK_SER_MAIN",
+      "value": "1k ohm 0.25W 1%",
+      "pins": {
+        "1": "MAIN_PACK_DIV",
+        "2": "MAIN_PACK_ADC"
+      },
+      "notes": ""
+    },
+    {
+      "ref": "C_PACK_MAIN",
+      "value": "10nF 25V",
+      "pins": {
+        "1": "MAIN_PACK_ADC",
+        "2": "GND"
+      },
+      "notes": ""
+    },
+    {
+      "ref": "D_ADC_HI_MAIN",
+      "value": "BAT54 Schottky clamp",
+      "pins": {
+        "ANODE": "MAIN_PACK_ADC",
+        "CATHODE": "3V3_MAIN"
+      },
+      "notes": "Review unpowered backfeed and leakage. Disconnect pack if logic supply absent."
+    },
+    {
+      "ref": "D_ADC_LO_MAIN",
+      "value": "BAT54 Schottky clamp",
+      "pins": {
+        "ANODE": "GND",
+        "CATHODE": "MAIN_PACK_ADC"
+      },
+      "notes": ""
+    },
+    {
+      "ref": "R_NTC_MAIN",
+      "value": "10k ohm 0.25W 1%",
+      "pins": {
+        "1": "3V3_MAIN",
+        "2": "MAIN_NTC_ADC"
+      },
+      "notes": ""
+    },
+    {
+      "ref": "NTC_MAIN",
+      "value": "10k at25C B3950 insulated sensor",
+      "pins": {
+        "1": "MAIN_NTC_ADC",
+        "2": "GND"
+      },
+      "notes": "Two independently read sensors thermally attached to pack in bench fixture."
+    },
+    {
+      "ref": "R_ID_MAIN",
+      "value": "10k ohm 0.25W 1%",
+      "pins": {
+        "1": "3V3_MAIN",
+        "2": "MAIN_ID_ADC"
+      },
+      "notes": ""
+    },
+    {
+      "ref": "TIP_ID_MAIN",
+      "value": "T01=10k; T02=16k; separate circuits",
+      "pins": {
+        "1": "MAIN_ID_ADC",
+        "2": "GND"
+      },
+      "notes": "One resistor per controller, no shared 3V3 rail."
+    },
+    {
+      "ref": "R_KEY_MAIN_50",
+      "value": "1k ohm 0.25W",
+      "pins": {
+        "1": "B50",
+        "2": "MAIN_KEY_50"
+      },
+      "notes": "Branch resistor; both boards share switch only, not regulator outputs."
+    },
+    {
+      "ref": "R_KEY_MAIN_100",
+      "value": "1k ohm 0.25W",
+      "pins": {
+        "1": "B100",
+        "2": "MAIN_KEY_100"
+      },
+      "notes": "Branch resistor; both boards share switch only, not regulator outputs."
+    },
+    {
+      "ref": "R_KEY_MAIN_150",
+      "value": "1k ohm 0.25W",
+      "pins": {
+        "1": "B150",
+        "2": "MAIN_KEY_150"
+      },
+      "notes": "Branch resistor; both boards share switch only, not regulator outputs."
+    },
+    {
+      "ref": "R_KEY_MAIN_200",
+      "value": "1k ohm 0.25W",
+      "pins": {
+        "1": "B200",
+        "2": "MAIN_KEY_200"
+      },
+      "notes": "Branch resistor; both boards share switch only, not regulator outputs."
+    },
+    {
+      "ref": "R_KEY_MAIN_250",
+      "value": "1k ohm 0.25W",
+      "pins": {
+        "1": "B250",
+        "2": "MAIN_KEY_250"
+      },
+      "notes": "Branch resistor; both boards share switch only, not regulator outputs."
+    },
+    {
+      "ref": "R_KEY_MAIN_COOL",
+      "value": "1k ohm 0.25W",
+      "pins": {
+        "1": "COOL_LOGIC",
+        "2": "MAIN_KEY_COOL"
+      },
+      "notes": "Branch resistor; both boards share switch only, not regulator outputs."
+    },
+    {
+      "ref": "R_KEY_MAIN_HEAT",
+      "value": "1k ohm 0.25W",
+      "pins": {
+        "1": "HEAT_LOGIC",
+        "2": "MAIN_KEY_HEAT"
+      },
+      "notes": "Branch resistor; both boards share switch only, not regulator outputs."
+    },
+    {
+      "ref": "R_KEY_MAIN_ARM",
+      "value": "1k ohm 0.25W",
+      "pins": {
+        "1": "ARM_LOGIC",
+        "2": "MAIN_KEY_ARM"
+      },
+      "notes": "Branch resistor; both boards share switch only, not regulator outputs."
+    },
+    {
+      "ref": "R_KEY_MAIN_DOCK",
+      "value": "1k ohm 0.25W",
+      "pins": {
+        "1": "DOCK_LOGIC",
+        "2": "MAIN_KEY_DOCK"
+      },
+      "notes": "Branch resistor; both boards share switch only, not regulator outputs."
+    },
+    {
+      "ref": "R_KEY_MAIN_TIP",
+      "value": "1k ohm 0.25W",
+      "pins": {
+        "1": "TIP_PRESENT",
+        "2": "MAIN_KEY_TIP"
+      },
+      "notes": "Branch resistor; both boards share switch only, not regulator outputs."
+    },
+    {
+      "ref": "RTD_SUP",
+      "value": "Adafruit 3648 Pt1000 MAX31865 breakout",
+      "pins": {
+        "VIN": "3V3_SUP",
+        "GND": "GND",
+        "SCK": "SUP_SCK",
+        "SDI": "SUP_MOSI",
+        "SDO": "SUP_MISO",
+        "CS": "SUP_CS",
+        "F+": "SUP_RTD_FORCE_PLUS",
+        "RTD+": "SUP_RTD_SENSE_PLUS",
+        "RTD-": "SUP_RTD_SENSE_MINUS",
+        "F-": "SUP_RTD_FORCE_MINUS",
+        "3Vo": "NC_SUP_RTD_3VO"
+      },
+      "notes": "4-wire sensor and 4.3k reference version. Module internals remain manufacturer controlled. Leave 3Vo unused; sensor terminals now explicit. Keep 4-wire configuration jumpers as supplied."
+    },
+    {
+      "ref": "R_PACK_TOP_SUP",
+      "value": "100k ohm 0.25W 1%",
+      "pins": {
+        "1": "PACK_FUSED",
+        "2": "SUP_PACK_DIV"
+      },
+      "notes": ""
+    },
+    {
+      "ref": "R_PACK_BOTTOM_SUP",
+      "value": "39k ohm 0.25W 1%",
+      "pins": {
+        "1": "SUP_PACK_DIV",
+        "2": "GND"
+      },
+      "notes": ""
+    },
+    {
+      "ref": "R_PACK_SER_SUP",
+      "value": "1k ohm 0.25W 1%",
+      "pins": {
+        "1": "SUP_PACK_DIV",
+        "2": "SUP_PACK_ADC"
+      },
+      "notes": ""
+    },
+    {
+      "ref": "C_PACK_SUP",
+      "value": "10nF 25V",
+      "pins": {
+        "1": "SUP_PACK_ADC",
+        "2": "GND"
+      },
+      "notes": ""
+    },
+    {
+      "ref": "D_ADC_HI_SUP",
+      "value": "BAT54 Schottky clamp",
+      "pins": {
+        "ANODE": "SUP_PACK_ADC",
+        "CATHODE": "3V3_SUP"
+      },
+      "notes": "Review unpowered backfeed and leakage. Disconnect pack if logic supply absent."
+    },
+    {
+      "ref": "D_ADC_LO_SUP",
+      "value": "BAT54 Schottky clamp",
+      "pins": {
+        "ANODE": "GND",
+        "CATHODE": "SUP_PACK_ADC"
+      },
+      "notes": ""
+    },
+    {
+      "ref": "R_NTC_SUP",
+      "value": "10k ohm 0.25W 1%",
+      "pins": {
+        "1": "3V3_SUP",
+        "2": "SUP_NTC_ADC"
+      },
+      "notes": ""
+    },
+    {
+      "ref": "NTC_SUP",
+      "value": "10k at25C B3950 insulated sensor",
+      "pins": {
+        "1": "SUP_NTC_ADC",
+        "2": "GND"
+      },
+      "notes": "Two independently read sensors thermally attached to pack in bench fixture."
+    },
+    {
+      "ref": "R_ID_SUP",
+      "value": "10k ohm 0.25W 1%",
+      "pins": {
+        "1": "3V3_SUP",
+        "2": "SUP_ID_ADC"
+      },
+      "notes": ""
+    },
+    {
+      "ref": "TIP_ID_SUP",
+      "value": "T01=10k; T02=16k; separate circuits",
+      "pins": {
+        "1": "SUP_ID_ADC",
+        "2": "GND"
+      },
+      "notes": "One resistor per controller, no shared 3V3 rail."
+    },
+    {
+      "ref": "R_KEY_SUP_50",
+      "value": "1k ohm 0.25W",
+      "pins": {
+        "1": "B50",
+        "2": "SUP_KEY_50"
+      },
+      "notes": "Branch resistor; both boards share switch only, not regulator outputs."
+    },
+    {
+      "ref": "R_KEY_SUP_100",
+      "value": "1k ohm 0.25W",
+      "pins": {
+        "1": "B100",
+        "2": "SUP_KEY_100"
+      },
+      "notes": "Branch resistor; both boards share switch only, not regulator outputs."
+    },
+    {
+      "ref": "R_KEY_SUP_150",
+      "value": "1k ohm 0.25W",
+      "pins": {
+        "1": "B150",
+        "2": "SUP_KEY_150"
+      },
+      "notes": "Branch resistor; both boards share switch only, not regulator outputs."
+    },
+    {
+      "ref": "R_KEY_SUP_200",
+      "value": "1k ohm 0.25W",
+      "pins": {
+        "1": "B200",
+        "2": "SUP_KEY_200"
+      },
+      "notes": "Branch resistor; both boards share switch only, not regulator outputs."
+    },
+    {
+      "ref": "R_KEY_SUP_250",
+      "value": "1k ohm 0.25W",
+      "pins": {
+        "1": "B250",
+        "2": "SUP_KEY_250"
+      },
+      "notes": "Branch resistor; both boards share switch only, not regulator outputs."
+    },
+    {
+      "ref": "R_KEY_SUP_COOL",
+      "value": "1k ohm 0.25W",
+      "pins": {
+        "1": "COOL_LOGIC",
+        "2": "SUP_KEY_COOL"
+      },
+      "notes": "Branch resistor; both boards share switch only, not regulator outputs."
+    },
+    {
+      "ref": "R_KEY_SUP_HEAT",
+      "value": "1k ohm 0.25W",
+      "pins": {
+        "1": "HEAT_LOGIC",
+        "2": "SUP_KEY_HEAT"
+      },
+      "notes": "Branch resistor; both boards share switch only, not regulator outputs."
+    },
+    {
+      "ref": "R_KEY_SUP_ARM",
+      "value": "1k ohm 0.25W",
+      "pins": {
+        "1": "ARM_LOGIC",
+        "2": "SUP_KEY_ARM"
+      },
+      "notes": "Branch resistor; both boards share switch only, not regulator outputs."
+    },
+    {
+      "ref": "R_KEY_SUP_DOCK",
+      "value": "1k ohm 0.25W",
+      "pins": {
+        "1": "DOCK_LOGIC",
+        "2": "SUP_KEY_DOCK"
+      },
+      "notes": "Branch resistor; both boards share switch only, not regulator outputs."
+    },
+    {
+      "ref": "R_KEY_SUP_TIP",
+      "value": "1k ohm 0.25W",
+      "pins": {
+        "1": "TIP_PRESENT",
+        "2": "SUP_KEY_TIP"
+      },
+      "notes": "Branch resistor; both boards share switch only, not regulator outputs."
+    },
+    {
+      "ref": "S50",
+      "value": "50C preset NO button",
+      "pins": {
+        "1": "B50",
+        "2": "GND"
+      },
+      "notes": ""
+    },
+    {
+      "ref": "S100",
+      "value": "100C preset NO button",
+      "pins": {
+        "1": "B100",
+        "2": "GND"
+      },
+      "notes": ""
+    },
+    {
+      "ref": "S150",
+      "value": "150C preset NO button",
+      "pins": {
+        "1": "B150",
+        "2": "GND"
+      },
+      "notes": ""
+    },
+    {
+      "ref": "S200",
+      "value": "200C preset NO button",
+      "pins": {
+        "1": "B200",
+        "2": "GND"
+      },
+      "notes": ""
+    },
+    {
+      "ref": "S250",
+      "value": "250C preset NO button",
+      "pins": {
+        "1": "B250",
+        "2": "GND"
+      },
+      "notes": ""
+    },
+    {
+      "ref": "S_HEAT",
+      "value": "HEAT momentary NO",
+      "pins": {
+        "1": "HEAT_LOGIC",
+        "2": "GND"
+      },
+      "notes": ""
+    },
+    {
+      "ref": "S_ARM",
+      "value": "ARM momentary NO",
+      "pins": {
+        "1": "ARM_LOGIC",
+        "2": "GND"
+      },
+      "notes": ""
+    },
+    {
+      "ref": "OLED1",
+      "value": "Adafruit 326 STEMMA QT revision, auto-reset, I2C SSD1306",
+      "pins": {
+        "VIN": "3V3_MAIN",
+        "GND": "GND",
+        "SDA": "OLED_SDA",
+        "SCL": "OLED_SCL"
+      },
+      "notes": "Current auto-reset revision required; older reset-dependent variants are unsupported by this wiring. Check actual I2C address and I2C jumper configuration."
+    },
+    {
+      "ref": "R_LINK_M",
+      "value": "1k UART TX branch",
+      "pins": {
+        "1": "MAIN_TX",
+        "2": "SUP_RX"
+      },
+      "notes": ""
+    },
+    {
+      "ref": "R_LINK_S",
+      "value": "1k UART TX branch",
+      "pins": {
+        "1": "SUP_TX",
+        "2": "MAIN_RX"
+      },
+      "notes": ""
+    },
+    {
+      "ref": "R_PULSE_M",
+      "value": "1k pulse branch",
+      "pins": {
+        "1": "MAIN_PULSE_OUT",
+        "2": "SUP_PULSE_IN"
+      },
+      "notes": ""
+    },
+    {
+      "ref": "R_PULSE_S",
+      "value": "1k pulse branch",
+      "pins": {
+        "1": "SUP_PULSE_OUT",
+        "2": "MAIN_PULSE_IN"
+      },
+      "notes": ""
+    },
+    {
+      "ref": "SENSOR_MAIN",
+      "value": "Pt1000 IEC-type alpha 0.00385, 4-wire, supplier-qualified package",
+      "pins": {
+        "END_A_FORCE": "MAIN_RTD_FORCE_PLUS",
+        "END_A_SENSE": "MAIN_RTD_SENSE_PLUS",
+        "END_B_SENSE": "MAIN_RTD_SENSE_MINUS",
+        "END_B_FORCE": "MAIN_RTD_FORCE_MINUS"
+      },
+      "notes": "Two leads at each end of ONE platinum element. Wire colours are not standardized. Sensor package/retention/insulation and temperature rating require supplier qualification; no clinical material release."
+    },
+    {
+      "ref": "SENSOR_SUP",
+      "value": "Pt1000 IEC-type alpha 0.00385, 4-wire, supplier-qualified package",
+      "pins": {
+        "END_A_FORCE": "SUP_RTD_FORCE_PLUS",
+        "END_A_SENSE": "SUP_RTD_SENSE_PLUS",
+        "END_B_SENSE": "SUP_RTD_SENSE_MINUS",
+        "END_B_FORCE": "SUP_RTD_FORCE_MINUS"
+      },
+      "notes": "Two leads at each end of ONE platinum element. Wire colours are not standardized. Sensor package/retention/insulation and temperature rating require supplier qualification; no clinical material release."
+    }
+  ]
+}

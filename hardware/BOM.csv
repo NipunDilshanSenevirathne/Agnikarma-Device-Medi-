@@ -1,0 +1,79 @@
+Reference,Value_or_orderable_module,Quantity,Assembly_note
+A1,Raspberry Pi Pico MAIN,1,Full GPIO schedule is in pinmap.csv; USB disconnected during powered heater tests.
+A2,Raspberry Pi Pico SUPERVISOR,1,Do not tie the two 3V3 outputs together.
+PS1,Pololu D24V22F5 / 2858,1,
+U1,TC4420CPA non-inverting PDIP-8,1,Duplicate supply/output pins connected. Verify actual package before assembly.
+Q1,Infineon IRLZ44NPBF TO-220,1,Drive at 5V via U1; tab is live drain. Thermally characterize and insulate exposed metal.
+R1,10 ohm 0.25W 1%,1,
+R2,100k ohm 0.25W 1%,1,
+R3,100k ohm 0.25W 1%,1,
+C1,100nF 25V X7R,1,At U1 pins; short high-frequency bypass loop.
+C2,1uF 25V X7R,1,At U1 supply; final placement reviewed with driver datasheet.
+C3,100uF 16V low-ESR electrolytic,1,
+K1,Omron G5LE-1-DC5,1,Bench high-side disconnect; flyback diode affects release time. Not a safety-rated redundant relay.
+Q2,onsemi PN2222ABU TO-92,1,Use this exact pinout; P2N2222A has a different mapping.
+R4,330 ohm 0.25W 1%,1,
+R5,100k ohm 0.25W 1%,1,
+D1,1N4007,1,"Across relay coil, after physical interlocks."
+S_COOL,DPDT momentary pushbutton,1,Pole A removes coil supply when pressed; pole B active-low to both controllers via branch resistors.
+S_DOCK,Two-pole dock detect switch,1,
+S_TIP,Two-pole cartridge lock switch,1,Closes only on positively locked cartridge; validate physical sequencing.
+F1,"5A fuse, DC-rated holder",1,"Starting selection; coordinate fuse curve with pack, wiring, contacts and fault tests."
+J_PACK,Qualified 2S protected pack / bench PSU,1,Pack requires supplier qualification; begin with a guarded current-limited bench supply.
+H_TEST,2.2 ohm >=100W chassis load on specified heat sink,1,"The resistor is a nonclinical commissioning load, not a medical tip."
+RTD_MAIN,Adafruit 3648 Pt1000 MAX31865 breakout,1,4-wire sensor and 4.3k reference version. Module internals remain manufacturer controlled. Leave 3Vo unused; sensor terminals now explicit. Keep 4-wire configuration jumpers as supplied.
+R_PACK_TOP_MAIN,100k ohm 0.25W 1%,1,
+R_PACK_BOTTOM_MAIN,39k ohm 0.25W 1%,1,
+R_PACK_SER_MAIN,1k ohm 0.25W 1%,1,
+C_PACK_MAIN,10nF 25V,1,
+D_ADC_HI_MAIN,BAT54 Schottky clamp,1,Review unpowered backfeed and leakage. Disconnect pack if logic supply absent.
+D_ADC_LO_MAIN,BAT54 Schottky clamp,1,
+R_NTC_MAIN,10k ohm 0.25W 1%,1,
+NTC_MAIN,10k at25C B3950 insulated sensor,1,Two independently read sensors thermally attached to pack in bench fixture.
+R_ID_MAIN,10k ohm 0.25W 1%,1,
+TIP_ID_MAIN,T01=10k; T02=16k; separate circuits,1,"One resistor per controller, no shared 3V3 rail."
+R_KEY_MAIN_50,1k ohm 0.25W,1,"Branch resistor; both boards share switch only, not regulator outputs."
+R_KEY_MAIN_100,1k ohm 0.25W,1,"Branch resistor; both boards share switch only, not regulator outputs."
+R_KEY_MAIN_150,1k ohm 0.25W,1,"Branch resistor; both boards share switch only, not regulator outputs."
+R_KEY_MAIN_200,1k ohm 0.25W,1,"Branch resistor; both boards share switch only, not regulator outputs."
+R_KEY_MAIN_250,1k ohm 0.25W,1,"Branch resistor; both boards share switch only, not regulator outputs."
+R_KEY_MAIN_COOL,1k ohm 0.25W,1,"Branch resistor; both boards share switch only, not regulator outputs."
+R_KEY_MAIN_HEAT,1k ohm 0.25W,1,"Branch resistor; both boards share switch only, not regulator outputs."
+R_KEY_MAIN_ARM,1k ohm 0.25W,1,"Branch resistor; both boards share switch only, not regulator outputs."
+R_KEY_MAIN_DOCK,1k ohm 0.25W,1,"Branch resistor; both boards share switch only, not regulator outputs."
+R_KEY_MAIN_TIP,1k ohm 0.25W,1,"Branch resistor; both boards share switch only, not regulator outputs."
+RTD_SUP,Adafruit 3648 Pt1000 MAX31865 breakout,1,4-wire sensor and 4.3k reference version. Module internals remain manufacturer controlled. Leave 3Vo unused; sensor terminals now explicit. Keep 4-wire configuration jumpers as supplied.
+R_PACK_TOP_SUP,100k ohm 0.25W 1%,1,
+R_PACK_BOTTOM_SUP,39k ohm 0.25W 1%,1,
+R_PACK_SER_SUP,1k ohm 0.25W 1%,1,
+C_PACK_SUP,10nF 25V,1,
+D_ADC_HI_SUP,BAT54 Schottky clamp,1,Review unpowered backfeed and leakage. Disconnect pack if logic supply absent.
+D_ADC_LO_SUP,BAT54 Schottky clamp,1,
+R_NTC_SUP,10k ohm 0.25W 1%,1,
+NTC_SUP,10k at25C B3950 insulated sensor,1,Two independently read sensors thermally attached to pack in bench fixture.
+R_ID_SUP,10k ohm 0.25W 1%,1,
+TIP_ID_SUP,T01=10k; T02=16k; separate circuits,1,"One resistor per controller, no shared 3V3 rail."
+R_KEY_SUP_50,1k ohm 0.25W,1,"Branch resistor; both boards share switch only, not regulator outputs."
+R_KEY_SUP_100,1k ohm 0.25W,1,"Branch resistor; both boards share switch only, not regulator outputs."
+R_KEY_SUP_150,1k ohm 0.25W,1,"Branch resistor; both boards share switch only, not regulator outputs."
+R_KEY_SUP_200,1k ohm 0.25W,1,"Branch resistor; both boards share switch only, not regulator outputs."
+R_KEY_SUP_250,1k ohm 0.25W,1,"Branch resistor; both boards share switch only, not regulator outputs."
+R_KEY_SUP_COOL,1k ohm 0.25W,1,"Branch resistor; both boards share switch only, not regulator outputs."
+R_KEY_SUP_HEAT,1k ohm 0.25W,1,"Branch resistor; both boards share switch only, not regulator outputs."
+R_KEY_SUP_ARM,1k ohm 0.25W,1,"Branch resistor; both boards share switch only, not regulator outputs."
+R_KEY_SUP_DOCK,1k ohm 0.25W,1,"Branch resistor; both boards share switch only, not regulator outputs."
+R_KEY_SUP_TIP,1k ohm 0.25W,1,"Branch resistor; both boards share switch only, not regulator outputs."
+S50,50C preset NO button,1,
+S100,100C preset NO button,1,
+S150,150C preset NO button,1,
+S200,200C preset NO button,1,
+S250,250C preset NO button,1,
+S_HEAT,HEAT momentary NO,1,
+S_ARM,ARM momentary NO,1,
+OLED1,"Adafruit 326 STEMMA QT revision, auto-reset, I2C SSD1306",1,Current auto-reset revision required; older reset-dependent variants are unsupported by this wiring. Check actual I2C address and I2C jumper configuration.
+R_LINK_M,1k UART TX branch,1,
+R_LINK_S,1k UART TX branch,1,
+R_PULSE_M,1k pulse branch,1,
+R_PULSE_S,1k pulse branch,1,
+SENSOR_MAIN,"Pt1000 IEC-type alpha 0.00385, 4-wire, supplier-qualified package",1,Two leads at each end of ONE platinum element. Wire colours are not standardized. Sensor package/retention/insulation and temperature rating require supplier qualification; no clinical material release.
+SENSOR_SUP,"Pt1000 IEC-type alpha 0.00385, 4-wire, supplier-qualified package",1,Two leads at each end of ONE platinum element. Wire colours are not standardized. Sensor package/retention/insulation and temperature rating require supplier qualification; no clinical material release.

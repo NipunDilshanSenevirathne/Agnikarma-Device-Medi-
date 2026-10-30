@@ -1,0 +1,18 @@
+{
+  "nominal_heater_ohm": 2.2,
+  "pwm_hz": 1000,
+  "max_duty": 0.5,
+  "power_command_bound_W": 30.0,
+  "gate_peak_ideal_A": 0.5,
+  "relay_base_resistor_ohm": 330,
+  "base_current_mA_at_Vbe_0p8": 7.575757575757576,
+  "adc_ideal_at_pack8p5V": 2.384892086330935,
+  "adc_at8p5V_with1pct_worst_divider": 2.4193583351398225,
+  "limits": [
+    "Gate current ignores driver and gate internal resistance; not measured.",
+    "Power bound uses nominal resistance; a lower actual heater resistance increases real current/power.",
+    "Wire length excludes cold leads, joining and resistance tolerances; surface-load arithmetic does not establish permissible wire temperature.",
+    "No mandrel, winding pitch, cement, insulation, sensor or cartridge process is released by this calculation.",
+    "No charger, battery qualification, runtime promise or clinical exposure limit is established."
+  ]
+}

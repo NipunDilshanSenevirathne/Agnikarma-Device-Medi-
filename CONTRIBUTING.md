@@ -1,0 +1,2 @@
+# Contributing
+Read docs/delivery-status.md. Run all host checks. Keep hardware/design.json, BOM, pin map, schematic and firmware consistent. Add meaningful regression tests for logic changes. Include measured hardware setup, instruments, revision and uncertainty for hardware claims. Do not change safety thresholds to hide failures. Do not submit patient data or imply regulatory approval. Review licensing with the project owner before accepting external contributions.

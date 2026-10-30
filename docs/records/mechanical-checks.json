@@ -1,0 +1,173 @@
+{
+  "time_utc": "2026-10-30T22:21:15.307479+00:00",
+  "tool": "OpenSCAD version 2021.01",
+  "scope": "Native OpenSCAD compilation, closed mesh edge incidence, bounds and mounting-coordinate arithmetic. No physical fit, thermal, material or medical evidence.",
+  "source_hashes": [
+    {
+      "path": "mechanical/bench_enclosure.scad",
+      "sha256": "f486868f06a670390602de9261d0d3b3f598010c7c78bf364de33ac2101f3e71"
+    },
+    {
+      "path": "mechanical/tips.scad",
+      "sha256": "8cab76606095818d868caee797fad2521bc29f8e53bf40abfe7bc0e809299f66"
+    },
+    {
+      "path": "mechanical/assembly_parameters.json",
+      "sha256": "5e3a2abab0a05eeebe7900c04c8017e2cce14890de618e9cd03b2a4c1313d3ed"
+    }
+  ],
+  "parts": [
+    {
+      "part": "controller-base",
+      "source": "bench_enclosure.scad",
+      "define": "part=\"base\"",
+      "triangles": 4436,
+      "bounds_min_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_max_mm": [
+        180.0,
+        120.0,
+        65.0
+      ],
+      "closed_edge_count_check": "PASS",
+      "sha256": "376d9d9ba82e5304efe15eb98e6994c91166b1345410cbd822aead62381ac57e",
+      "native_log": "Geometries in cache: 15\nGeometry cache size in bytes: 97320\nCGAL Polyhedrons in cache: 16\nCGAL cache size in bytes: 12182672\nTotal rendering time: 0:00:12.339\n   Top level object is a 3D object:\n   Simple:        yes\n   Vertices:     2216\n   Halfedges:    6648\n   Edges:        3324\n   Halffacets:   2244\n   Facets:       1122\n   Volumes:         2"
+    },
+    {
+      "part": "controller-lid",
+      "source": "bench_enclosure.scad",
+      "define": "part=\"lid\"",
+      "triangles": 4208,
+      "bounds_min_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_max_mm": [
+        180.0,
+        120.0,
+        10.0
+      ],
+      "closed_edge_count_check": "PASS",
+      "sha256": "b8f6c6d8571615bbaa1171f90ff2d231ae651fa2ea9f98a331c424d2cdb9bdf1",
+      "native_log": "Geometries in cache: 22\nGeometry cache size in bytes: 171536\nCGAL Polyhedrons in cache: 10\nCGAL cache size in bytes: 11536736\nTotal rendering time: 0:00:13.827\n   Top level object is a 3D object:\n   Simple:        yes\n   Vertices:     2080\n   Halfedges:    6242\n   Edges:        3121\n   Halffacets:   2096\n   Facets:       1048\n   Volumes:         2"
+    },
+    {
+      "part": "harness-clamp",
+      "source": "bench_enclosure.scad",
+      "define": "part=\"clamp\"",
+      "triangles": 548,
+      "bounds_min_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_max_mm": [
+        44.0,
+        8.0,
+        26.0
+      ],
+      "closed_edge_count_check": "PASS",
+      "sha256": "aee714277436b4d9f0d4096abf196126f4a90307a57cfc6e2fce96b67da9a35d",
+      "native_log": "Geometries in cache: 7\nGeometry cache size in bytes: 39656\nCGAL Polyhedrons in cache: 2\nCGAL cache size in bytes: 711568\nTotal rendering time: 0:00:00.548\n   Top level object is a 3D object:\n   Simple:        yes\n   Vertices:      272\n   Halfedges:     816\n   Edges:         408\n   Halffacets:    276\n   Facets:        138\n   Volumes:         2"
+    },
+    {
+      "part": "T01-shape",
+      "source": "tips.scad",
+      "define": "tip_id=1",
+      "triangles": 5948,
+      "bounds_min_mm": [
+        -2.5,
+        -2.5,
+        0.0
+      ],
+      "bounds_max_mm": [
+        2.5,
+        2.5,
+        21.9995
+      ],
+      "closed_edge_count_check": "PASS",
+      "sha256": "5a42bf91366a44253bb628f37aed378378dba6d1495208e10770eb55968b7b7f",
+      "native_log": "Geometries in cache: 7\nGeometry cache size in bytes: 1388072\nCGAL Polyhedrons in cache: 3\nCGAL cache size in bytes: 19762160\nTotal rendering time: 0:00:11.182\n   Top level object is a 3D object:\n   Simple:        yes\n   Vertices:     2976\n   Halfedges:   15552\n   Edges:        7776\n   Halffacets:   9608\n   Facets:       4804\n   Volumes:         2"
+    },
+    {
+      "part": "T02-shape",
+      "source": "tips.scad",
+      "define": "tip_id=2",
+      "triangles": 5948,
+      "bounds_min_mm": [
+        -2.5,
+        -2.5,
+        0.0
+      ],
+      "bounds_max_mm": [
+        2.5,
+        2.5,
+        22.9989
+      ],
+      "closed_edge_count_check": "PASS",
+      "sha256": "e04cf9f8bac33e5d70937e07f0bda51d569f34c93196577a3d14313afb2b1de9",
+      "native_log": "Geometries in cache: 7\nGeometry cache size in bytes: 1388072\nCGAL Polyhedrons in cache: 3\nCGAL cache size in bytes: 19997168\nTotal rendering time: 0:00:12.006\n   Top level object is a 3D object:\n   Simple:        yes\n   Vertices:     2976\n   Halfedges:   15744\n   Edges:        7872\n   Halffacets:   9800\n   Facets:       4900\n   Volumes:         2"
+    },
+    {
+      "part": "T03-shape",
+      "source": "tips.scad",
+      "define": "tip_id=3",
+      "triangles": 764,
+      "bounds_min_mm": [
+        -3.0,
+        -3.0,
+        0.0
+      ],
+      "bounds_max_mm": [
+        3.0,
+        3.0,
+        21.0
+      ],
+      "closed_edge_count_check": "PASS",
+      "sha256": "ea0397a9b131274f7ae3d3cdac00d983e9184f83fb0ff880f38a8c8a74d3745a",
+      "native_log": "Geometries in cache: 5\nGeometry cache size in bytes: 69880\nCGAL Polyhedrons in cache: 3\nCGAL cache size in bytes: 1550832\nTotal rendering time: 0:00:03.015\n   Top level object is a 3D object:\n   Simple:        yes\n   Vertices:      384\n   Halfedges:    1152\n   Edges:         576\n   Halffacets:    390\n   Facets:        195\n   Volumes:         2"
+    },
+    {
+      "part": "T04-shape",
+      "source": "tips.scad",
+      "define": "tip_id=4",
+      "triangles": 796,
+      "bounds_min_mm": [
+        -3.0,
+        -2.5,
+        0.0
+      ],
+      "bounds_max_mm": [
+        3.0,
+        2.5,
+        21.0
+      ],
+      "closed_edge_count_check": "PASS",
+      "sha256": "48b2ff8964cd016582435dfd9607abdccc4fec3ac6579bed1033c192f9a1d093",
+      "native_log": "Geometries in cache: 18\nGeometry cache size in bytes: 341280\nCGAL Polyhedrons in cache: 9\nCGAL cache size in bytes: 6131680\nTotal rendering time: 0:00:06.152\n   Top level object is a 3D object:\n   Simple:        yes\n   Vertices:      400\n   Halfedges:    1592\n   Edges:         796\n   Halffacets:    796\n   Facets:        398\n   Volumes:         2"
+    },
+    {
+      "part": "T05-shape",
+      "source": "tips.scad",
+      "define": "tip_id=5",
+      "triangles": 6238,
+      "bounds_min_mm": [
+        -2.5,
+        -2.5,
+        0.0
+      ],
+      "bounds_max_mm": [
+        4.9992,
+        2.5,
+        23.5614
+      ],
+      "closed_edge_count_check": "PASS",
+      "sha256": "57acbdae9de0455d0153c16e1333d567f09ce558a85e2defbbdf412228dbf17e",
+      "native_log": "Geometries in cache: 6\nGeometry cache size in bytes: 1374096\nCGAL Polyhedrons in cache: 6\nCGAL cache size in bytes: 38500472\nTotal rendering time: 0:00:16.276\n   Top level object is a 3D object:\n   Simple:        yes\n   Vertices:     3121\n   Halfedges:   15846\n   Edges:        7923\n   Halffacets:   9612\n   Facets:       4806\n   Volumes:         2"
+    }
+  ]
+}

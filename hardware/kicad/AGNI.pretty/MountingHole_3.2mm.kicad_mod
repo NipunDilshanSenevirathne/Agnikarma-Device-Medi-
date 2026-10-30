@@ -1,0 +1,1 @@
+(footprint "MountingHole_3.2mm" (version 20240108) (generator "pcbnew") (layer "F.Cu") (attr board_only exclude_from_pos_files exclude_from_bom) (uuid "5c8afcde-132e-5d1b-8c6f-a3861cf79be3") (fp_text reference "H4" (at 0 0) (layer "F.Fab") (effects (font (size 1 1) (thickness 0.15)))) (pad "" np_thru_hole circle (at 0 0) (size 3.2 3.2) (drill 3.2) (layers "*.Cu" "*.Mask")))

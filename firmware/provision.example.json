@@ -1,0 +1,9 @@
+{
+  "role": "main",
+  "bench_enabled": false,
+  "sensor_offset_c": 0.0,
+  "battery_scale": 1.0,
+  "reference_resistor_ohm": 4300.0,
+  "display_address": 60,
+  "calibration_record": "UNMEASURED"
+}

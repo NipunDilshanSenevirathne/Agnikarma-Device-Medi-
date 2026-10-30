@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="1400" height="850" preserveAspectRatio="xMinYMin meet" viewBox="0 0 1400 850" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="1400" height="850"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-850)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="1400" height="850" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="40" y="795" style="font-family: Helvetica-Bold; font-size: 29px;fill: rgb(9%,20%,28%); stroke:none;" transform="translate(0,1590) scale(1,-1)">Defined power-stage circuit and interlocks</text>
+			<text x="40" y="760" style="font-family: Helvetica; font-size: 15px;fill: rgb(32%,41%,47%); stroke:none;" transform="translate(0,1520) scale(1,-1)">Values and package mapping are in hardware/design.json. Verify actual parts before assembly; no high-current solderless breadboard.</text>
+			<text x="40" y="25" style="font-family: Helvetica; font-size: 13px;fill: rgb(63%,24%,25%); stroke:none;" transform="translate(0,50) scale(1,-1)">P3 MODULE PROTOTYPE | GENERATED ENGINEERING DRAWING | PHYSICAL VALIDATION PENDING</text>
+			<rect x="40" y="560" width="190" height="105" rx="10" ry="10" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: rgb(93%,96%,97%); fill-rule: evenodd;"/>
+			<text x="55" y="635" style="font-family: Helvetica; font-size: 16px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,1270) scale(1,-1)">PACK_FUSED</text>
+			<text x="55" y="613" style="font-family: Helvetica; font-size: 16px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,1226) scale(1,-1)">F1 from pack entry</text>
+			<rect x="330" y="560" width="240" height="105" rx="10" ry="10" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: rgb(93%,96%,97%); fill-rule: evenodd;"/>
+			<text x="345" y="635" style="font-family: Helvetica; font-size: 16px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,1270) scale(1,-1)">K1 COM -&gt; NO</text>
+			<text x="345" y="613" style="font-family: Helvetica; font-size: 16px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,1226) scale(1,-1)">G5LE-1-DC5</text>
+			<text x="345" y="591" style="font-family: Helvetica; font-size: 16px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,1182) scale(1,-1)">Normally open contact</text>
+			<rect x="690" y="560" width="220" height="105" rx="10" ry="10" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: rgb(93%,96%,97%); fill-rule: evenodd;"/>
+			<text x="705" y="635" style="font-family: Helvetica; font-size: 16px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,1270) scale(1,-1)">Heater / test load</text>
+			<text x="705" y="613" style="font-family: Helvetica; font-size: 16px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,1226) scale(1,-1)">2.2 ohm assumption</text>
+			<rect x="1060" y="560" width="260" height="105" rx="10" ry="10" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: rgb(93%,96%,97%); fill-rule: evenodd;"/>
+			<text x="1075" y="635" style="font-family: Helvetica; font-size: 16px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,1270) scale(1,-1)">Q1 IRLZ44NPBF</text>
+			<text x="1075" y="613" style="font-family: Helvetica; font-size: 16px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,1226) scale(1,-1)">Drain -&gt; source</text>
+			<text x="1075" y="591" style="font-family: Helvetica; font-size: 16px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,1182) scale(1,-1)">Source to power GND</text>
+			<polyline points="230 610, 330 610" style="stroke: rgb(81%,44%,14%); stroke-linecap: butt; stroke-width: 5; fill: None; fill-rule: evenodd;"/>
+			<polyline points="570 610, 690 610" style="stroke: rgb(81%,44%,14%); stroke-linecap: butt; stroke-width: 5; fill: None; fill-rule: evenodd;"/>
+			<polyline points="910 610, 1060 610" style="stroke: rgb(81%,44%,14%); stroke-linecap: butt; stroke-width: 5; fill: None; fill-rule: evenodd;"/>
+			<rect x="690" y="360" width="220" height="110" rx="10" ry="10" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: rgb(93%,96%,97%); fill-rule: evenodd;"/>
+			<text x="705" y="440" style="font-family: Helvetica; font-size: 16px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,880) scale(1,-1)">TC4420CPA</text>
+			<text x="705" y="418" style="font-family: Helvetica; font-size: 16px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,836) scale(1,-1)">5 V supply / bypass</text>
+			<text x="705" y="396" style="font-family: Helvetica; font-size: 16px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,792) scale(1,-1)">Input: main GP21</text>
+			<polyline points="910 415, 990 415, 990 580, 1060 580" style="stroke: rgb(81%,44%,14%); stroke-linecap: butt; stroke-width: 3; fill: None; fill-rule: evenodd;"/>
+			<text x="930" y="380" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,20%,28%); stroke:none;" transform="translate(0,760) scale(1,-1)">10 ohm gate R</text>
+			<text x="930" y="360" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,20%,28%); stroke:none;" transform="translate(0,720) scale(1,-1)">100k gate-source R</text>
+			<text x="930" y="340" style="font-family: Helvetica; font-size: 14px;fill: rgb(9%,20%,28%); stroke:none;" transform="translate(0,680) scale(1,-1)">100k driver-input R</text>
+			<rect x="40" y="160" width="270" height="135" rx="10" ry="10" style="stroke: rgb(63%,24%,25%); stroke-linecap: butt; stroke-width: 2; fill: rgb(93%,96%,97%); fill-rule: evenodd;"/>
+			<text x="55" y="265" style="font-family: Helvetica; font-size: 16px;fill: rgb(63%,24%,25%); stroke:none;" transform="translate(0,530) scale(1,-1)">5 V -&gt; COOL NC</text>
+			<text x="55" y="243" style="font-family: Helvetica; font-size: 16px;fill: rgb(63%,24%,25%); stroke:none;" transform="translate(0,486) scale(1,-1)">-&gt; dock NC</text>
+			<text x="55" y="221" style="font-family: Helvetica; font-size: 16px;fill: rgb(63%,24%,25%); stroke:none;" transform="translate(0,442) scale(1,-1)">-&gt; locked-tip NO</text>
+			<text x="55" y="199" style="font-family: Helvetica; font-size: 16px;fill: rgb(63%,24%,25%); stroke:none;" transform="translate(0,398) scale(1,-1)">-&gt; coil positive</text>
+			<rect x="390" y="160" width="240" height="135" rx="10" ry="10" style="stroke: rgb(63%,24%,25%); stroke-linecap: butt; stroke-width: 2; fill: rgb(93%,96%,97%); fill-rule: evenodd;"/>
+			<text x="405" y="265" style="font-family: Helvetica; font-size: 16px;fill: rgb(63%,24%,25%); stroke:none;" transform="translate(0,530) scale(1,-1)">K1 coil</text>
+			<text x="405" y="243" style="font-family: Helvetica; font-size: 16px;fill: rgb(63%,24%,25%); stroke:none;" transform="translate(0,486) scale(1,-1)">1N4007 across coil</text>
+			<text x="405" y="221" style="font-family: Helvetica; font-size: 16px;fill: rgb(63%,24%,25%); stroke:none;" transform="translate(0,442) scale(1,-1)">Cathode at positive</text>
+			<rect x="730" y="160" width="240" height="135" rx="10" ry="10" style="stroke: rgb(63%,24%,25%); stroke-linecap: butt; stroke-width: 2; fill: rgb(93%,96%,97%); fill-rule: evenodd;"/>
+			<text x="745" y="265" style="font-family: Helvetica; font-size: 16px;fill: rgb(63%,24%,25%); stroke:none;" transform="translate(0,530) scale(1,-1)">PN2222ABU</text>
+			<text x="745" y="243" style="font-family: Helvetica; font-size: 16px;fill: rgb(63%,24%,25%); stroke:none;" transform="translate(0,486) scale(1,-1)">Collector: coil return</text>
+			<text x="745" y="221" style="font-family: Helvetica; font-size: 16px;fill: rgb(63%,24%,25%); stroke:none;" transform="translate(0,442) scale(1,-1)">Emitter: GND</text>
+			<rect x="1090" y="160" width="230" height="135" rx="10" ry="10" style="stroke: rgb(63%,24%,25%); stroke-linecap: butt; stroke-width: 2; fill: rgb(93%,96%,97%); fill-rule: evenodd;"/>
+			<text x="1105" y="265" style="font-family: Helvetica; font-size: 16px;fill: rgb(63%,24%,25%); stroke:none;" transform="translate(0,530) scale(1,-1)">Supervisor GP21</text>
+			<text x="1105" y="243" style="font-family: Helvetica; font-size: 16px;fill: rgb(63%,24%,25%); stroke:none;" transform="translate(0,486) scale(1,-1)">330 ohm to base</text>
+			<text x="1105" y="221" style="font-family: Helvetica; font-size: 16px;fill: rgb(63%,24%,25%); stroke:none;" transform="translate(0,442) scale(1,-1)">100k base-emitter</text>
+			<polyline points="310 230, 390 230" style="stroke: rgb(63%,24%,25%); stroke-linecap: butt; stroke-width: 3; fill: None; fill-rule: evenodd;"/>
+			<polyline points="630 230, 730 230" style="stroke: rgb(63%,24%,25%); stroke-linecap: butt; stroke-width: 3; fill: None; fill-rule: evenodd;"/>
+			<polyline points="1090 230, 970 230" style="stroke: rgb(63%,24%,25%); stroke-linecap: butt; stroke-width: 3; fill: None; fill-rule: evenodd;"/>
+			<text x="40" y="85" style="font-family: Helvetica; font-size: 15px;fill: rgb(9%,20%,28%); stroke:none;" transform="translate(0,170) scale(1,-1)">Relay release delay (including flyback diode) and fault energy must be measured. Q1 tab is electrically live drain.</text>
+			<text x="40" y="64" style="font-family: Helvetica; font-size: 15px;fill: rgb(9%,20%,28%); stroke:none;" transform="translate(0,128) scale(1,-1)">This schematic defines a bench circuit; no medical safety or sterilization performance has been established.</text>
+		</g>
+	</g>
+</svg>

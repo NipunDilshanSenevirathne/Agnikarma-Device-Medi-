@@ -1,0 +1,81 @@
+Connector,Pin,Pico,Pico_header_pin,Net,Note
+J1,1,MAIN,1,MAIN_TX,3.3V GPIO unless supply/ground
+J1,2,MAIN,2,MAIN_RX,3.3V GPIO unless supply/ground
+J1,3,MAIN,3,GND,3.3V GPIO unless supply/ground
+J1,4,MAIN,4,OLED_SDA,3.3V GPIO unless supply/ground
+J1,5,MAIN,5,OLED_SCL,3.3V GPIO unless supply/ground
+J1,6,MAIN,6,MAIN_MISO,3.3V GPIO unless supply/ground
+J1,7,MAIN,7,MAIN_CS,3.3V GPIO unless supply/ground
+J1,8,MAIN,8,GND,3.3V GPIO unless supply/ground
+J1,9,MAIN,9,MAIN_SCK,3.3V GPIO unless supply/ground
+J1,10,MAIN,10,MAIN_MOSI,3.3V GPIO unless supply/ground
+J1,11,MAIN,11,MAIN_KEY_50,3.3V GPIO unless supply/ground
+J1,12,MAIN,12,MAIN_KEY_100,3.3V GPIO unless supply/ground
+J1,13,MAIN,13,GND,3.3V GPIO unless supply/ground
+J1,14,MAIN,14,MAIN_KEY_150,3.3V GPIO unless supply/ground
+J1,15,MAIN,15,MAIN_KEY_200,3.3V GPIO unless supply/ground
+J1,16,MAIN,16,MAIN_KEY_250,3.3V GPIO unless supply/ground
+J1,17,MAIN,17,NC,No pack/heater current; unused pad isolated
+J1,18,MAIN,18,GND,3.3V GPIO unless supply/ground
+J1,19,MAIN,19,MAIN_KEY_COOL,3.3V GPIO unless supply/ground
+J1,20,MAIN,20,MAIN_KEY_HEAT,3.3V GPIO unless supply/ground
+J2,1,MAIN,40,NC,No pack/heater current; unused pad isolated
+J2,2,MAIN,39,5V,3.3V GPIO unless supply/ground
+J2,3,MAIN,38,GND,3.3V GPIO unless supply/ground
+J2,4,MAIN,37,NC,No pack/heater current; unused pad isolated
+J2,5,MAIN,36,3V3_MAIN,3.3V GPIO unless supply/ground
+J2,6,MAIN,35,NC,No pack/heater current; unused pad isolated
+J2,7,MAIN,34,MAIN_ID_ADC,3.3V GPIO unless supply/ground
+J2,8,MAIN,33,GND,3.3V GPIO unless supply/ground
+J2,9,MAIN,32,MAIN_NTC_ADC,3.3V GPIO unless supply/ground
+J2,10,MAIN,31,MAIN_PACK_ADC,3.3V GPIO unless supply/ground
+J2,11,MAIN,30,NC,No pack/heater current; unused pad isolated
+J2,12,MAIN,29,NC,No pack/heater current; unused pad isolated
+J2,13,MAIN,28,GND,3.3V GPIO unless supply/ground
+J2,14,MAIN,27,PWM_INPUT,3.3V GPIO unless supply/ground
+J2,15,MAIN,26,MAIN_PULSE_OUT,3.3V GPIO unless supply/ground
+J2,16,MAIN,25,MAIN_PULSE_IN,3.3V GPIO unless supply/ground
+J2,17,MAIN,24,MAIN_KEY_TIP,3.3V GPIO unless supply/ground
+J2,18,MAIN,23,GND,3.3V GPIO unless supply/ground
+J2,19,MAIN,22,MAIN_KEY_DOCK,3.3V GPIO unless supply/ground
+J2,20,MAIN,21,MAIN_KEY_ARM,3.3V GPIO unless supply/ground
+J3,1,SUP,1,SUP_TX,3.3V GPIO unless supply/ground
+J3,2,SUP,2,SUP_RX,3.3V GPIO unless supply/ground
+J3,3,SUP,3,GND,3.3V GPIO unless supply/ground
+J3,4,SUP,4,NC,No pack/heater current; unused pad isolated
+J3,5,SUP,5,NC,No pack/heater current; unused pad isolated
+J3,6,SUP,6,SUP_MISO,3.3V GPIO unless supply/ground
+J3,7,SUP,7,SUP_CS,3.3V GPIO unless supply/ground
+J3,8,SUP,8,GND,3.3V GPIO unless supply/ground
+J3,9,SUP,9,SUP_SCK,3.3V GPIO unless supply/ground
+J3,10,SUP,10,SUP_MOSI,3.3V GPIO unless supply/ground
+J3,11,SUP,11,SUP_KEY_50,3.3V GPIO unless supply/ground
+J3,12,SUP,12,SUP_KEY_100,3.3V GPIO unless supply/ground
+J3,13,SUP,13,GND,3.3V GPIO unless supply/ground
+J3,14,SUP,14,SUP_KEY_150,3.3V GPIO unless supply/ground
+J3,15,SUP,15,SUP_KEY_200,3.3V GPIO unless supply/ground
+J3,16,SUP,16,SUP_KEY_250,3.3V GPIO unless supply/ground
+J3,17,SUP,17,NC,No pack/heater current; unused pad isolated
+J3,18,SUP,18,GND,3.3V GPIO unless supply/ground
+J3,19,SUP,19,SUP_KEY_COOL,3.3V GPIO unless supply/ground
+J3,20,SUP,20,SUP_KEY_HEAT,3.3V GPIO unless supply/ground
+J4,1,SUP,40,NC,No pack/heater current; unused pad isolated
+J4,2,SUP,39,5V,3.3V GPIO unless supply/ground
+J4,3,SUP,38,GND,3.3V GPIO unless supply/ground
+J4,4,SUP,37,NC,No pack/heater current; unused pad isolated
+J4,5,SUP,36,3V3_SUP,3.3V GPIO unless supply/ground
+J4,6,SUP,35,NC,No pack/heater current; unused pad isolated
+J4,7,SUP,34,SUP_ID_ADC,3.3V GPIO unless supply/ground
+J4,8,SUP,33,GND,3.3V GPIO unless supply/ground
+J4,9,SUP,32,SUP_NTC_ADC,3.3V GPIO unless supply/ground
+J4,10,SUP,31,SUP_PACK_ADC,3.3V GPIO unless supply/ground
+J4,11,SUP,30,NC,No pack/heater current; unused pad isolated
+J4,12,SUP,29,NC,No pack/heater current; unused pad isolated
+J4,13,SUP,28,GND,3.3V GPIO unless supply/ground
+J4,14,SUP,27,SUP_RELAY_OUTPUT,3.3V GPIO unless supply/ground
+J4,15,SUP,26,SUP_PULSE_OUT,3.3V GPIO unless supply/ground
+J4,16,SUP,25,SUP_PULSE_IN,3.3V GPIO unless supply/ground
+J4,17,SUP,24,SUP_KEY_TIP,3.3V GPIO unless supply/ground
+J4,18,SUP,23,GND,3.3V GPIO unless supply/ground
+J4,19,SUP,22,SUP_KEY_DOCK,3.3V GPIO unless supply/ground
+J4,20,SUP,21,SUP_KEY_ARM,3.3V GPIO unless supply/ground

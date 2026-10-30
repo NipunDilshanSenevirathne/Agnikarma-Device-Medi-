@@ -1,0 +1,92 @@
+Net,Connected_terminals,Treatment
+3V3_MAIN,A1.36_3V3_OUT; RTD_MAIN.VIN; D_ADC_HI_MAIN.CATHODE; R_NTC_MAIN.1; R_ID_MAIN.1; OLED1.VIN,Review return/current/insulation in physical layout
+3V3_SUP,A2.36_3V3_OUT; RTD_SUP.VIN; D_ADC_HI_SUP.CATHODE; R_NTC_SUP.1; R_ID_SUP.1,Review return/current/insulation in physical layout
+5V,A1.39_VSYS; A2.39_VSYS; PS1.VOUT; U1.1; U1.8; C1.1; C2.1; C3.POS; S_COOL.A_COM,Review return/current/insulation in physical layout
+ARM_LOGIC,R_KEY_MAIN_ARM.1; R_KEY_SUP_ARM.1; S_ARM.1,Review return/current/insulation in physical layout
+B100,R_KEY_MAIN_100.1; R_KEY_SUP_100.1; S100.1,Review return/current/insulation in physical layout
+B150,R_KEY_MAIN_150.1; R_KEY_SUP_150.1; S150.1,Review return/current/insulation in physical layout
+B200,R_KEY_MAIN_200.1; R_KEY_SUP_200.1; S200.1,Review return/current/insulation in physical layout
+B250,R_KEY_MAIN_250.1; R_KEY_SUP_250.1; S250.1,Review return/current/insulation in physical layout
+B50,R_KEY_MAIN_50.1; R_KEY_SUP_50.1; S50.1,Review return/current/insulation in physical layout
+COIL_MINUS,K1.COIL_B; Q2.3_C; D1.ANODE,Review return/current/insulation in physical layout
+COIL_PLUS,K1.COIL_A; D1.CATHODE; S_TIP.A_NO,Review return/current/insulation in physical layout
+COOL_LOGIC,S_COOL.B_NO; R_KEY_MAIN_COOL.1; R_KEY_SUP_COOL.1,Review return/current/insulation in physical layout
+COOL_NC_OUT,S_COOL.A_NC; S_DOCK.A_COM,Review return/current/insulation in physical layout
+DOCK_LOGIC,S_DOCK.B_NO; R_KEY_MAIN_DOCK.1; R_KEY_SUP_DOCK.1,Review return/current/insulation in physical layout
+DOCK_NC_OUT,S_DOCK.A_NC; S_TIP.A_COM,Review return/current/insulation in physical layout
+DRIVE,U1.6; U1.7; R1.1,Review return/current/insulation in physical layout
+GND,A1.38_GND; A1.3_GND; A1.8_GND; A1.13_GND; A1.18_GND; A1.23_GND; A1.28_GND; A1.33_GND; A2.38_GND; A2.3_GND; A2.8_GND; A2.13_GND; A2.18_GND; A2.23_GND; A2.28_GND; A2.33_GND; PS1.GND; U1.4; U1.5; Q1.3_SOURCE; R2.2; R3.2; C1.2; C2.2; C3.NEG; Q2.1_E; R5.2; S_COOL.B_COM; S_DOCK.B_COM; S_TIP.B_COM; J_PACK.MINUS; RTD_MAIN.GND; R_PACK_BOTTOM_MAIN.2; C_PACK_MAIN.2; D_ADC_LO_MAIN.ANODE; NTC_MAIN.2; TIP_ID_MAIN.2; RTD_SUP.GND; R_PACK_BOTTOM_SUP.2; C_PACK_SUP.2; D_ADC_LO_SUP.ANODE; NTC_SUP.2; TIP_ID_SUP.2; S50.2; S100.2; S150.2; S200.2; S250.2; S_HEAT.2; S_ARM.2; OLED1.GND,Review return/current/insulation in physical layout
+HEAT_LOGIC,R_KEY_MAIN_HEAT.1; R_KEY_SUP_HEAT.1; S_HEAT.1,Review return/current/insulation in physical layout
+HEAT_MINUS,Q1.2_DRAIN; Q1.TAB; H_TEST.2,Review return/current/insulation in physical layout
+HEAT_PLUS,K1.NO; H_TEST.1,Review return/current/insulation in physical layout
+MAIN_CS,A1.7_GP5; RTD_MAIN.CS,Review return/current/insulation in physical layout
+MAIN_ID_ADC,A1.34_GP28; R_ID_MAIN.2; TIP_ID_MAIN.1,Review return/current/insulation in physical layout
+MAIN_KEY_100,A1.12_GP9; R_KEY_MAIN_100.2,Review return/current/insulation in physical layout
+MAIN_KEY_150,A1.14_GP10; R_KEY_MAIN_150.2,Review return/current/insulation in physical layout
+MAIN_KEY_200,A1.15_GP11; R_KEY_MAIN_200.2,Review return/current/insulation in physical layout
+MAIN_KEY_250,A1.16_GP12; R_KEY_MAIN_250.2,Review return/current/insulation in physical layout
+MAIN_KEY_50,A1.11_GP8; R_KEY_MAIN_50.2,Review return/current/insulation in physical layout
+MAIN_KEY_ARM,A1.21_GP16; R_KEY_MAIN_ARM.2,Review return/current/insulation in physical layout
+MAIN_KEY_COOL,A1.19_GP14; R_KEY_MAIN_COOL.2,Review return/current/insulation in physical layout
+MAIN_KEY_DOCK,A1.22_GP17; R_KEY_MAIN_DOCK.2,Review return/current/insulation in physical layout
+MAIN_KEY_HEAT,A1.20_GP15; R_KEY_MAIN_HEAT.2,Review return/current/insulation in physical layout
+MAIN_KEY_TIP,A1.24_GP18; R_KEY_MAIN_TIP.2,Review return/current/insulation in physical layout
+MAIN_MISO,A1.6_GP4; RTD_MAIN.SDO,Review return/current/insulation in physical layout
+MAIN_MOSI,A1.10_GP7; RTD_MAIN.SDI,Review return/current/insulation in physical layout
+MAIN_NTC_ADC,A1.32_GP27; R_NTC_MAIN.2; NTC_MAIN.1,Review return/current/insulation in physical layout
+MAIN_PACK_ADC,A1.31_GP26; R_PACK_SER_MAIN.2; C_PACK_MAIN.1; D_ADC_HI_MAIN.ANODE; D_ADC_LO_MAIN.CATHODE,Review return/current/insulation in physical layout
+MAIN_PACK_DIV,R_PACK_TOP_MAIN.2; R_PACK_BOTTOM_MAIN.1; R_PACK_SER_MAIN.1,Review return/current/insulation in physical layout
+MAIN_PULSE_IN,A1.25_GP19; R_PULSE_S.2,Review return/current/insulation in physical layout
+MAIN_PULSE_OUT,A1.26_GP20; R_PULSE_M.1,Review return/current/insulation in physical layout
+MAIN_RTD_FORCE_MINUS,RTD_MAIN.F-; SENSOR_MAIN.END_B_FORCE,Review return/current/insulation in physical layout
+MAIN_RTD_FORCE_PLUS,RTD_MAIN.F+; SENSOR_MAIN.END_A_FORCE,Review return/current/insulation in physical layout
+MAIN_RTD_SENSE_MINUS,RTD_MAIN.RTD-; SENSOR_MAIN.END_B_SENSE,Review return/current/insulation in physical layout
+MAIN_RTD_SENSE_PLUS,RTD_MAIN.RTD+; SENSOR_MAIN.END_A_SENSE,Review return/current/insulation in physical layout
+MAIN_RX,A1.2_GP1; R_LINK_S.2,Review return/current/insulation in physical layout
+MAIN_SCK,A1.9_GP6; RTD_MAIN.SCK,Review return/current/insulation in physical layout
+MAIN_TX,A1.1_GP0; R_LINK_M.1,Review return/current/insulation in physical layout
+MOS_GATE,Q1.1_GATE; R1.2; R2.1,Review return/current/insulation in physical layout
+NC_COOL_A,S_COOL.A_NO,Leave unconnected
+NC_COOL_B,S_COOL.B_NC,Leave unconnected
+NC_DOCK_A,S_DOCK.A_NO,Leave unconnected
+NC_DOCK_B,S_DOCK.B_NC,Leave unconnected
+NC_K1,K1.NC,Leave unconnected
+NC_MAIN_RTD_3VO,RTD_MAIN.3Vo,Leave unconnected
+NC_SUP_RTD_3VO,RTD_SUP.3Vo,Leave unconnected
+NC_TIP_A,S_TIP.A_NC,Leave unconnected
+NC_TIP_B,S_TIP.B_NC,Leave unconnected
+NC_U1_3,U1.3,Leave unconnected
+OLED_SCL,A1.5_GP3; OLED1.SCL,Review return/current/insulation in physical layout
+OLED_SDA,A1.4_GP2; OLED1.SDA,Review return/current/insulation in physical layout
+PACK_FUSED,PS1.VIN; K1.COM; F1.OUT; R_PACK_TOP_MAIN.1; R_PACK_TOP_SUP.1,Review return/current/insulation in physical layout
+PACK_PLUS,F1.IN; J_PACK.PLUS,Review return/current/insulation in physical layout
+PWM_INPUT,A1.27_GP21; U1.2; R3.1,Review return/current/insulation in physical layout
+RELAY_BASE,Q2.2_B; R4.2; R5.1,Review return/current/insulation in physical layout
+SUP_CS,A2.7_GP5; RTD_SUP.CS,Review return/current/insulation in physical layout
+SUP_ID_ADC,A2.34_GP28; R_ID_SUP.2; TIP_ID_SUP.1,Review return/current/insulation in physical layout
+SUP_KEY_100,A2.12_GP9; R_KEY_SUP_100.2,Review return/current/insulation in physical layout
+SUP_KEY_150,A2.14_GP10; R_KEY_SUP_150.2,Review return/current/insulation in physical layout
+SUP_KEY_200,A2.15_GP11; R_KEY_SUP_200.2,Review return/current/insulation in physical layout
+SUP_KEY_250,A2.16_GP12; R_KEY_SUP_250.2,Review return/current/insulation in physical layout
+SUP_KEY_50,A2.11_GP8; R_KEY_SUP_50.2,Review return/current/insulation in physical layout
+SUP_KEY_ARM,A2.21_GP16; R_KEY_SUP_ARM.2,Review return/current/insulation in physical layout
+SUP_KEY_COOL,A2.19_GP14; R_KEY_SUP_COOL.2,Review return/current/insulation in physical layout
+SUP_KEY_DOCK,A2.22_GP17; R_KEY_SUP_DOCK.2,Review return/current/insulation in physical layout
+SUP_KEY_HEAT,A2.20_GP15; R_KEY_SUP_HEAT.2,Review return/current/insulation in physical layout
+SUP_KEY_TIP,A2.24_GP18; R_KEY_SUP_TIP.2,Review return/current/insulation in physical layout
+SUP_MISO,A2.6_GP4; RTD_SUP.SDO,Review return/current/insulation in physical layout
+SUP_MOSI,A2.10_GP7; RTD_SUP.SDI,Review return/current/insulation in physical layout
+SUP_NTC_ADC,A2.32_GP27; R_NTC_SUP.2; NTC_SUP.1,Review return/current/insulation in physical layout
+SUP_PACK_ADC,A2.31_GP26; R_PACK_SER_SUP.2; C_PACK_SUP.1; D_ADC_HI_SUP.ANODE; D_ADC_LO_SUP.CATHODE,Review return/current/insulation in physical layout
+SUP_PACK_DIV,R_PACK_TOP_SUP.2; R_PACK_BOTTOM_SUP.1; R_PACK_SER_SUP.1,Review return/current/insulation in physical layout
+SUP_PULSE_IN,A2.25_GP19; R_PULSE_M.2,Review return/current/insulation in physical layout
+SUP_PULSE_OUT,A2.26_GP20; R_PULSE_S.1,Review return/current/insulation in physical layout
+SUP_RELAY_OUTPUT,A2.27_GP21; R4.1,Review return/current/insulation in physical layout
+SUP_RTD_FORCE_MINUS,RTD_SUP.F-; SENSOR_SUP.END_B_FORCE,Review return/current/insulation in physical layout
+SUP_RTD_FORCE_PLUS,RTD_SUP.F+; SENSOR_SUP.END_A_FORCE,Review return/current/insulation in physical layout
+SUP_RTD_SENSE_MINUS,RTD_SUP.RTD-; SENSOR_SUP.END_B_SENSE,Review return/current/insulation in physical layout
+SUP_RTD_SENSE_PLUS,RTD_SUP.RTD+; SENSOR_SUP.END_A_SENSE,Review return/current/insulation in physical layout
+SUP_RX,A2.2_GP1; R_LINK_M.2,Review return/current/insulation in physical layout
+SUP_SCK,A2.9_GP6; RTD_SUP.SCK,Review return/current/insulation in physical layout
+SUP_TX,A2.1_GP0; R_LINK_S.1,Review return/current/insulation in physical layout
+TIP_PRESENT,S_TIP.B_NO; R_KEY_MAIN_TIP.1; R_KEY_SUP_TIP.1,Review return/current/insulation in physical layout

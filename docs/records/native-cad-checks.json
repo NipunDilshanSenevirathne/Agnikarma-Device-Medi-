@@ -1,0 +1,233 @@
+{
+  "version": "0.5.0",
+  "tool": "10.0.8",
+  "time_utc": "2026-10-30T22:22:33.313543+00:00",
+  "scope": "Native parsing, generic passive-symbol ERC, carrier DRC and schematic parity, CAD and candidate fabrication exports. Not a medical manufacturing release.",
+  "passed": true,
+  "checks": {
+    "carrier_erc_violations": 0,
+    "module-system_erc_violations": 0,
+    "carrier_violations": 0,
+    "carrier_unconnected_items": 0,
+    "carrier_schematic_parity": 0
+  },
+  "source_hashes": [
+    {
+      "path": "hardware/kicad/agni-controller-carrier.kicad_pcb",
+      "sha256": "b4bc9a4df3af691d128f84f86d04baa984b04369a30d92f30f667f70797bf067"
+    },
+    {
+      "path": "hardware/kicad/agni-controller-carrier.kicad_pro",
+      "sha256": "acc210620642f3b413085fd2ea11b26c767bf0fbbdd57d57caadc546cfca7928"
+    },
+    {
+      "path": "hardware/kicad/agni-controller-carrier.kicad_sch",
+      "sha256": "2891a31861ea27420d82b30795d9970cfac66257d30a27e4d24cba4259fcdc51"
+    },
+    {
+      "path": "hardware/kicad/agni-module-system.kicad_pro",
+      "sha256": "0db9962682da45c36b730c51fdf4156209c7964270eb295f2f0a57e61b5bf779"
+    },
+    {
+      "path": "hardware/kicad/agni-module-system.kicad_sch",
+      "sha256": "8c9ed2ffcd4f37deb3b5c54783a19e73e1c5d71f5dcf0b60bb6fd9ff5b4e5a4d"
+    },
+    {
+      "path": "hardware/kicad/AGNI.kicad_sym",
+      "sha256": "067605203fb40a59cbc250a333b406a77b722cef86f80c0b6396664208a3111c"
+    },
+    {
+      "path": "hardware/kicad/AGNI.pretty/Breakout_1x20_P2.54.kicad_mod",
+      "sha256": "89260bd4a2075b60b267e1e4bf30597cde1047f5ba50b0973a57fb11b0bfccb6"
+    },
+    {
+      "path": "hardware/kicad/AGNI.pretty/MountingHole_3.2mm.kicad_mod",
+      "sha256": "985c4020119a3b91ea16bfdce38c2d4eace994fd67fa0dc011d7f494cfe9d3f6"
+    },
+    {
+      "path": "hardware/kicad/AGNI.pretty/Pico_2x20_17.78mm.kicad_mod",
+      "sha256": "d0150dcbd71ff5ffb43e1267ab33a002e22220d4d06a374ec82b4d0f7ad6e1c1"
+    },
+    {
+      "path": "hardware/kicad/AGNI.pretty/Power_1x02_P5.08.kicad_mod",
+      "sha256": "2f7390f57c2912777b8fce15971c250c6750864b2f4e8fdbe2bdc3b02875404f"
+    },
+    {
+      "path": "hardware/kicad/fp-lib-table",
+      "sha256": "2062ab8a659bb98f98a0e9881cfef1556cdc2cde17f3521b024a8a1b34e77446"
+    },
+    {
+      "path": "hardware/kicad/sym-lib-table",
+      "sha256": "501b250d995be699bae949d9a1362e9c86f9dd2febb3731cbd07bf15bd2edd33"
+    }
+  ],
+  "output_hashes": [
+    {
+      "path": "docs/images/carrier-bottom-native.png",
+      "sha256": "d19aae0c55276df4f13974abe9b43bd6263ff3e38d65072a8c08b60b6f6ff85d"
+    },
+    {
+      "path": "docs/images/carrier-bottom.svg",
+      "sha256": "ff6a30e17036ab912d8aaa6a50383f60c52b170ba4838c850ea0b52a5140e8d9"
+    },
+    {
+      "path": "docs/images/carrier-routing.svg",
+      "sha256": "5fd034d4aa7a8fcc95683ca9cb9326e2f0f278f7fa4b91f1d6a8b9c157052c43"
+    },
+    {
+      "path": "docs/images/carrier-top-native.png",
+      "sha256": "6da40209c9cd7bcd17a7e3a484a792f001ae30202d99e0c9c1eb5528ff971d64"
+    },
+    {
+      "path": "docs/images/carrier-top.svg",
+      "sha256": "82261d557c61a0f65264296ab22ce66368595b875511125fa289c2af5a740eb3"
+    },
+    {
+      "path": "hardware/drawings/carrier-layers.pdf",
+      "sha256": "72caa1afecad6d0846c5569dde4f3f0d922c52eb7ae2bcd86eeb6a4e4a9a2e36"
+    },
+    {
+      "path": "hardware/drawings/carrier-netlist.xml",
+      "sha256": "4728461592b0965d6a7b2c9008e691dba0eee8d9af5e9cb698c1dbaad5ba6d4c"
+    },
+    {
+      "path": "hardware/drawings/carrier-schematic.pdf",
+      "sha256": "401b3be15f66ff5a77fa51839732ca1d47abf58156611d0309d646390e5ee292"
+    },
+    {
+      "path": "hardware/drawings/module-system-schematic.pdf",
+      "sha256": "a4fefb3c77b8133005bd18734a4f3d48810258d8636aa4a46497aa47e642548e"
+    },
+    {
+      "path": "hardware/fabrication/P3R1/agni-controller-carrier-B_Cu.gbl",
+      "sha256": "bfb8b2cc65b70268a774c51479f1f11a5005f0745dbb1fea9748568ace088bd2"
+    },
+    {
+      "path": "hardware/fabrication/P3R1/agni-controller-carrier-B_Mask.gbs",
+      "sha256": "ea30cb9301c97433cde831c5d112f792570835c16e3309b1473b9422a064f4a7"
+    },
+    {
+      "path": "hardware/fabrication/P3R1/agni-controller-carrier-Edge_Cuts.gm1",
+      "sha256": "e7ee878cbeb47f15b5e9e339fc5c5d2e3bc4ba1d2a890c79064610bab35c04dd"
+    },
+    {
+      "path": "hardware/fabrication/P3R1/agni-controller-carrier-F_Cu.gtl",
+      "sha256": "c20a0edd7061d205c653fc1f999842d9924217f4425719a9eafaef0510dd6d21"
+    },
+    {
+      "path": "hardware/fabrication/P3R1/agni-controller-carrier-F_Mask.gts",
+      "sha256": "c49c34872ae1cad56304f4afdfaf8f92d2ac4e43da334af85b576b92401dc2fa"
+    },
+    {
+      "path": "hardware/fabrication/P3R1/agni-controller-carrier-f_silkscreen.gto",
+      "sha256": "3372c44ca112714e99d4753010a0542da799c8cb7d247e43467c139d47f9aff8"
+    },
+    {
+      "path": "hardware/fabrication/P3R1/agni-controller-carrier-job.gbrjob",
+      "sha256": "9e471f8a93bbc618a7f7db30e52b141ffe2903837f39d33ca38e8552d01a2722"
+    },
+    {
+      "path": "hardware/fabrication/P3R1/agni-controller-carrier-NPTH-drl_map.svg",
+      "sha256": "984df0dbec562c3b020b0aa6b4dbf75bdc93ebdfff5cffcded60e5dffa597147"
+    },
+    {
+      "path": "hardware/fabrication/P3R1/agni-controller-carrier-NPTH.drl",
+      "sha256": "e648942d9d84c1f54b47b7226dc841ba00067fbac614e5ba53308875cbb3ab27"
+    },
+    {
+      "path": "hardware/fabrication/P3R1/agni-controller-carrier-PTH-drl_map.svg",
+      "sha256": "437e9d4ceb0ebcad2e22af71e58f2f445dbcaebbd723b17a88cc34208528d191"
+    },
+    {
+      "path": "hardware/fabrication/P3R1/agni-controller-carrier-PTH.drl",
+      "sha256": "eb3a71394ed265b6caac4ee83e1336dd88a937178c5330dfec870ee5254f243a"
+    },
+    {
+      "path": "hardware/fabrication/P3R1/drill-report.txt",
+      "sha256": "f0c8946f2b5599b1c1bbb90e2ecf892b48bd87ad7496e7d7482036c6e6c4d63f"
+    },
+    {
+      "path": "mechanical/exports/carrier-board-only.step",
+      "sha256": "dacee9fe73c5edf6607e7007bc8883391bf3a98cc6bbe453fc2d88248a5546f7"
+    }
+  ],
+  "commands": [
+    {
+      "command": "kicad-cli version",
+      "exit_code": 0,
+      "output": "10.0.8\n03:52:22: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n03:52:22: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 2: The system cannot find the file specified.)"
+    },
+    {
+      "command": "kicad-cli sch erc --format json --severity-all --exit-code-violations --output <repo>\\docs\\records\\carrier-erc.json <repo>\\hardware\\kicad\\agni-controller-carrier.kicad_sch",
+      "exit_code": 0,
+      "output": "Found 0 violations\nSaved ERC Report to <repo>/docs/records/carrier-erc.json\n03:52:23: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n03:52:23: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 2: The system cannot find the file specified.)"
+    },
+    {
+      "command": "kicad-cli sch erc --format json --severity-all --exit-code-violations --output <repo>\\docs\\records\\module-system-erc.json <repo>\\hardware\\kicad\\agni-module-system.kicad_sch",
+      "exit_code": 0,
+      "output": "Found 0 violations\nSaved ERC Report to <repo>/docs/records/module-system-erc.json\n03:52:24: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n03:52:24: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 2: The system cannot find the file specified.)"
+    },
+    {
+      "command": "kicad-cli pcb drc --format json --severity-all --schematic-parity --exit-code-violations --output <repo>\\docs\\records\\carrier-drc.json <repo>\\hardware\\kicad\\agni-controller-carrier.kicad_pcb",
+      "exit_code": 0,
+      "output": "Found 0 violations\nFound 0 unconnected items\nFound 0 schematic parity issues\nSaved DRC Report to <repo>/docs/records/carrier-drc.json\n03:52:25: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n03:52:25: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 2: The system cannot find the file specified.)"
+    },
+    {
+      "command": "kicad-cli pcb export gerbers --layers F.Cu,B.Cu,F.Mask,B.Mask,F.SilkS,Edge.Cuts --output <repo>\\hardware\\fabrication\\P3R1\\ <repo>\\hardware\\kicad\\agni-controller-carrier.kicad_pcb",
+      "exit_code": 0,
+      "output": "Plotted to '<repo>\\hardware\\fabrication\\P3R1\\agni-controller-carrier-F_Cu.gtl'.\nPlotted to '<repo>\\hardware\\fabrication\\P3R1\\agni-controller-carrier-B_Cu.gbl'.\nPlotted to '<repo>\\hardware\\fabrication\\P3R1\\agni-controller-carrier-f_silkscreen.gto'.\nPlotted to '<repo>\\hardware\\fabrication\\P3R1\\agni-controller-carrier-F_Mask.gts'.\nPlotted to '<repo>\\hardware\\fabrication\\P3R1\\agni-controller-carrier-B_Mask.gbs'.\nPlotted to '<repo>\\hardware\\fabrication\\P3R1\\agni-controller-carrier-Edge_Cuts.gm1'.\n03:52:26: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n03:52:26: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 2: The system cannot find the file specified.)"
+    },
+    {
+      "command": "kicad-cli pcb export drill --excellon-separate-th --generate-map --map-format svg --generate-report --report-path <repo>\\hardware\\fabrication\\P3R1\\drill-report.txt --output <repo>\\hardware\\fabrication\\P3R1\\ <repo>\\hardware\\kicad\\agni-controller-carrier.kicad_pcb",
+      "exit_code": 0,
+      "output": "Created file '<repo>\\hardware\\fabrication\\P3R1\\agni-controller-carrier-PTH.drl'\nCreated file '<repo>\\hardware\\fabrication\\P3R1\\agni-controller-carrier-NPTH.drl'\nCreated file '<repo>\\hardware\\fabrication\\P3R1\\agni-controller-carrier-PTH-drl_map.svg'.\nCreated file '<repo>\\hardware\\fabrication\\P3R1\\agni-controller-carrier-NPTH-drl_map.svg'.\nDone.\n03:52:26: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n03:52:26: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 2: The system cannot find the file specified.)"
+    },
+    {
+      "command": "kicad-cli sch export pdf --exclude-pdf-property-popups --output <repo>\\hardware\\drawings\\carrier-schematic.pdf <repo>\\hardware\\kicad\\agni-controller-carrier.kicad_sch",
+      "exit_code": 0,
+      "output": "Plotted to '<repo>\\hardware\\drawings\\carrier-schematic.pdf'.\nDone.\n03:52:27: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n03:52:27: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 2: The system cannot find the file specified.)"
+    },
+    {
+      "command": "kicad-cli sch export pdf --exclude-pdf-property-popups --output <repo>\\hardware\\drawings\\module-system-schematic.pdf <repo>\\hardware\\kicad\\agni-module-system.kicad_sch",
+      "exit_code": 0,
+      "output": "Plotted to '<repo>\\hardware\\drawings\\module-system-schematic.pdf'.\nDone.\n03:52:28: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n03:52:28: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 2: The system cannot find the file specified.)"
+    },
+    {
+      "command": "kicad-cli sch export netlist --format kicadxml --output <repo>\\hardware\\drawings\\carrier-netlist.xml <repo>\\hardware\\kicad\\agni-controller-carrier.kicad_sch",
+      "exit_code": 0,
+      "output": "03:52:29: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n03:52:29: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 2: The system cannot find the file specified.)"
+    },
+    {
+      "command": "kicad-cli pcb export svg --mode-single --page-size-mode 2 --layers F.Cu,F.SilkS,Edge.Cuts --output <repo>\\docs\\images\\carrier-top.svg <repo>\\hardware\\kicad\\agni-controller-carrier.kicad_pcb",
+      "exit_code": 0,
+      "output": "Plotted to '<repo>\\docs\\images\\carrier-top.svg'.\nDone.\n03:52:30: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n03:52:30: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 2: The system cannot find the file specified.)"
+    },
+    {
+      "command": "kicad-cli pcb export svg --mode-single --page-size-mode 2 --layers B.Cu,Edge.Cuts --output <repo>\\docs\\images\\carrier-bottom.svg <repo>\\hardware\\kicad\\agni-controller-carrier.kicad_pcb",
+      "exit_code": 0,
+      "output": "Plotted to '<repo>\\docs\\images\\carrier-bottom.svg'.\nDone.\n03:52:31: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n03:52:31: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 2: The system cannot find the file specified.)"
+    },
+    {
+      "command": "kicad-cli pcb export svg --mode-single --page-size-mode 2 --layers F.Cu,B.Cu,F.SilkS,Edge.Cuts --output <repo>\\docs\\images\\carrier-routing.svg <repo>\\hardware\\kicad\\agni-controller-carrier.kicad_pcb",
+      "exit_code": 0,
+      "output": "Plotted to '<repo>\\docs\\images\\carrier-routing.svg'.\nDone.\n03:52:31: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n03:52:31: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 2: The system cannot find the file specified.)"
+    },
+    {
+      "command": "kicad-cli pcb export pdf --mode-multipage --no-property-popups --layers F.Cu,B.Cu,F.SilkS,Edge.Cuts --output <repo>\\hardware\\drawings\\carrier-layers.pdf <repo>\\hardware\\kicad\\agni-controller-carrier.kicad_pcb",
+      "exit_code": 0,
+      "output": "Plotted to '<repo>\\hardware\\drawings\\carrier-layers.pdf'.\nDone.\n03:52:32: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n03:52:32: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 2: The system cannot find the file specified.)"
+    },
+    {
+      "command": "kicad-cli pcb export step --board-only --force --output <repo>\\mechanical\\exports\\carrier-board-only.step <repo>\\hardware\\kicad\\agni-controller-carrier.kicad_pcb",
+      "exit_code": 0,
+      "output": "STEP file '<repo>/mechanical/exports/carrier-board-only.step' created.\n\nExport time 0.461 s\n03:52:32: Error: Can't create registry key 'HKCU\\Software\\kicad-cli' (error 5: Access is denied.)\n03:52:32: Error: Can't open registry key 'HKCU\\Software\\kicad-cli' (error 2: The system cannot find the file specified.)"
+    }
+  ],
+  "limitations": [
+    "Generic passive symbols do not check power or signal pin directions inside modules.",
+    "Default KiCad ignored-check categories remain listed in the individual raw reports.",
+    "External MOSFET/relay/ADC/switch/sensor circuits are not routed on this carrier.",
+    "Native checks do not establish purchased footprint fit, independent circuit review, CAM acceptance or physical/medical performance.",
+    "Sandbox can log denied optional Windows registry preference access; successful reports and explicit counts determine the check result."
+  ]
+}

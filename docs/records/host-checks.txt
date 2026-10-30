@@ -1,0 +1,100 @@
+Host source verification. Target hardware, native EDA and clinical tests are not included.
+
+COMMAND: python -m unittest discover -s tests -v
+test_dock_shutdown_precedes_spi_acquisition (test_app_integration.AppIntegration.test_dock_shutdown_precedes_spi_acquisition) ... ok
+test_main_app_heat_cool_and_no_automatic_restart (test_app_integration.AppIntegration.test_main_app_heat_cool_and_no_automatic_restart) ... ok
+test_malformed_or_unprovisioned_config_never_energizes (test_app_integration.AppIntegration.test_malformed_or_unprovisioned_config_never_energizes) ... ok
+test_supervisor_app_relay_cool_and_exception_shutdown (test_app_integration.AppIntegration.test_supervisor_app_relay_cool_and_exception_shutdown) ... ok
+test_tip_removal_shutdown_precedes_spi_acquisition (test_app_integration.AppIntegration.test_tip_removal_shutdown_precedes_spi_acquisition) ... ok
+test_bad_numeric_fields_disabled_and_sanitized (test_audit_regressions.ProvisionTests.test_bad_numeric_fields_disabled_and_sanitized) ... ok
+test_boolean_is_not_a_measurement (test_audit_regressions.ProvisionTests.test_boolean_is_not_a_measurement) ... ok
+test_display_address_rejected (test_audit_regressions.ProvisionTests.test_display_address_rejected) ... ok
+test_empty_invalid_or_unmeasured_calibration (test_audit_regressions.ProvisionTests.test_empty_invalid_or_unmeasured_calibration) ... ok
+test_missing_and_wrong_record_types (test_audit_regressions.ProvisionTests.test_missing_and_wrong_record_types) ... ok
+test_nominal_record (test_audit_regressions.ProvisionTests.test_nominal_record) ... ok
+test_wrong_role_or_boolean (test_audit_regressions.ProvisionTests.test_wrong_role_or_boolean) ... ok
+test_incomplete_spi_read_is_a_controlled_fault (test_audit_regressions.SensorTransportTests.test_incomplete_spi_read_is_a_controlled_fault) ... ok
+test_relay_requires_main_armed_permit (test_audit_regressions.SupervisorPermitTests.test_relay_requires_main_armed_permit) ... ok
+test_absolute_and_setting_overtemp (test_core.ControllerTests.test_absolute_and_setting_overtemp) ... ok
+test_all_independent_fault_inputs_remove_output (test_core.ControllerTests.test_all_independent_fault_inputs_remove_output) ... ok
+test_bad_setpoint_rejected (test_core.ControllerTests.test_bad_setpoint_rejected) ... ok
+test_cool_preempts_heat_and_arm (test_core.ControllerTests.test_cool_preempts_heat_and_arm) ... ok
+test_cool_unknown_sensor_never_cooled (test_core.ControllerTests.test_cool_unknown_sensor_never_cooled) ... ok
+test_every_preset (test_core.ControllerTests.test_every_preset) ... ok
+test_heating_is_bounded (test_core.ControllerTests.test_heating_is_bounded) ... ok
+test_invalid_temperature_values (test_core.ControllerTests.test_invalid_temperature_values) ... ok
+test_long_control_gap_disarms (test_core.ControllerTests.test_long_control_gap_disarms) ... ok
+test_lost_supervisor_permit_removes_pwm (test_core.ControllerTests.test_lost_supervisor_permit_removes_pwm) ... ok
+test_no_heating_without_hold (test_core.ControllerTests.test_no_heating_without_hold) ... ok
+test_power_cap (test_core.ControllerTests.test_power_cap) ... ok
+test_release_cool_does_not_resume (test_core.ControllerTests.test_release_cool_does_not_resume) ... ok
+test_removed_300c_preset_is_rejected (test_core.ControllerTests.test_removed_300c_preset_is_rejected) ... ok
+test_setpoint_change_requires_rearm (test_core.ControllerTests.test_setpoint_change_requires_rearm) ... ok
+test_startup_requires_release_and_new_arm_edge (test_core.ControllerTests.test_startup_requires_release_and_new_arm_edge) ... ok
+test_crc_damage_does_not_refresh (test_core.ProtocolTests.test_crc_damage_does_not_refresh) ... ok
+test_crc_reference (test_core.ProtocolTests.test_crc_reference) ... ok
+test_nan_encode_rejected (test_core.ProtocolTests.test_nan_encode_rejected) ... ok
+test_oversized_bad_input_bounded (test_core.ProtocolTests.test_oversized_bad_input_bounded) ... ok
+test_replay_and_wrong_role (test_core.ProtocolTests.test_replay_and_wrong_role) ... ok
+test_roundtrip_and_split_packets (test_core.ProtocolTests.test_roundtrip_and_split_packets) ... ok
+test_sequence_wrap (test_core.ProtocolTests.test_sequence_wrap) ... ok
+test_unset_link_is_stale (test_core.ProtocolTests.test_unset_link_is_stale) ... ok
+test_out_of_range (test_core.SensorMathTests.test_out_of_range) ... ok
+test_roundtrip_each_preset (test_core.SensorMathTests.test_roundtrip_each_preset) ... ok
+test_fault_and_cool_latch_off (test_core.SupervisorTests.test_fault_and_cool_latch_off) ... ok
+test_main_temperature_disagreement (test_core.SupervisorTests.test_main_temperature_disagreement) ... ok
+test_no_relay_before_arm (test_core.SupervisorTests.test_no_relay_before_arm) ... ok
+test_relay_needs_heat_after_arm (test_core.SupervisorTests.test_relay_needs_heat_after_arm) ... ok
+test_selected_setting_changed_disarms (test_core.SupervisorTests.test_selected_setting_changed_disarms) ... ok
+test_bom_connections_consistent (test_design.DesignConsistency.test_bom_connections_consistent) ... ok
+test_gpio_definitions_match_firmware (test_design.DesignConsistency.test_gpio_definitions_match_firmware) ... ok
+test_no_pico_regulator_outputs_tied (test_design.DesignConsistency.test_no_pico_regulator_outputs_tied) ... ok
+test_physical_cool_chain_defined (test_design.DesignConsistency.test_physical_cool_chain_defined) ... ok
+test_fault_raises_and_cs_released (test_driver.DriverTests.test_fault_raises_and_cs_released) ... ok
+test_initialization (test_driver.DriverTests.test_initialization) ... ok
+test_nominal_approx_0c (test_driver.DriverTests.test_nominal_approx_0c) ... ok
+test_all_gpio_records_exist_on_controller_component (test_hardware_audit.HardwareAuditTests.test_all_gpio_records_exist_on_controller_component) ... ok
+test_both_rtd_elements_and_four_leads_are_defined (test_hardware_audit.HardwareAuditTests.test_both_rtd_elements_and_four_leads_are_defined) ... ok
+test_net_schedule_covers_every_component_pin (test_hardware_audit.HardwareAuditTests.test_net_schedule_covers_every_component_pin) ... ok
+test_no_live_300c_buttons_remain (test_hardware_audit.HardwareAuditTests.test_no_live_300c_buttons_remain) ... ok
+test_ordered_main_to_supervisor_links (test_hardware_audit.HardwareAuditTests.test_ordered_main_to_supervisor_links) ... ok
+test_native_breakout_reversal_and_isolated_unused_pads (test_native_connectivity.NativeConnectivity.test_native_breakout_reversal_and_isolated_unused_pads) ... ok
+test_native_carrier_mounts_match_housing_coordinates (test_native_connectivity.NativeConnectivity.test_native_carrier_mounts_match_housing_coordinates) ... ok
+test_native_pico_pin_assignment_matches_independent_gpio_schedule (test_native_connectivity.NativeConnectivity.test_native_pico_pin_assignment_matches_independent_gpio_schedule) ... ok
+test_native_supplies_and_all_ground_pins (test_native_connectivity.NativeConnectivity.test_native_supplies_and_all_ground_pins) ... ok
+test_deploy_preserves_existing_provisioning_unless_reset (test_tooling_audit.ToolingAuditTests.test_deploy_preserves_existing_provisioning_unless_reset) ... ok
+test_package_has_no_duplicate_manifest_or_private_files (test_tooling_audit.ToolingAuditTests.test_package_has_no_duplicate_manifest_or_private_files) ... ok
+
+----------------------------------------------------------------------
+Ran 63 tests in 0.924s
+
+OK
+
+EXIT: 0
+
+COMMAND: python tools/check_repository.py
+PASS: Python syntax, local Markdown links, GPIO ownership, selected circuit invariants, EDA structure and SVG XML.
+NOT RUN BY THIS COMMAND: target MicroPython, native EDA tools, hardware or medical validation. Stored native evidence is checked separately.
+
+EXIT: 0
+
+COMMAND: python tools/check_cad_evidence.py
+PASS: stored clean native ERC/DRC/parity and 8 closed meshes match delivered source/output SHA-256 hashes.
+This checks stored evidence; it does not rerun native tools or perform physical tests.
+
+EXIT: 0
+
+COMMAND: python -m tools.simulate
+Five hypothetical simulations written to build\simulation
+
+EXIT: 0
+
+COMMAND: python -m tools.deploy main --out build/verification-upload
+Prepared build\verification-upload\main with disabled defaults. See docs/firmware.md.
+
+EXIT: 0
+
+COMMAND: python -m tools.deploy supervisor --out build/verification-upload
+Prepared build\verification-upload\supervisor with disabled defaults. See docs/firmware.md.
+
+EXIT: 0

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="1400" height="850" preserveAspectRatio="xMinYMin meet" viewBox="0 0 1400 850" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="1400" height="850"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-850)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="1400" height="850" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="40" y="795" style="font-family: Helvetica-Bold; font-size: 29px;fill: rgb(9%,20%,28%); stroke:none;" transform="translate(0,1590) scale(1,-1)">Current implementation: dual-controller modular prototype</text>
+			<text x="40" y="760" style="font-family: Helvetica; font-size: 15px;fill: rgb(32%,41%,47%); stroke:none;" transform="translate(0,1520) scale(1,-1)">Main controls PWM; supervisor independently reads RTD2 and controls relay. COOL interrupts the coil supply directly.</text>
+			<text x="40" y="25" style="font-family: Helvetica; font-size: 13px;fill: rgb(63%,24%,25%); stroke:none;" transform="translate(0,50) scale(1,-1)">P3 MODULE PROTOTYPE | GENERATED ENGINEERING DRAWING | PHYSICAL VALIDATION PENDING</text>
+			<rect x="40" y="520" width="230" height="160" rx="10" ry="10" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: rgb(93%,96%,97%); fill-rule: evenodd;"/>
+			<text x="55" y="650" style="font-family: Helvetica; font-size: 16px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,1300) scale(1,-1)">Qualified 2S pack</text>
+			<text x="55" y="628" style="font-family: Helvetica; font-size: 16px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,1256) scale(1,-1)">or guarded bench supply</text>
+			<text x="55" y="606" style="font-family: Helvetica; font-size: 16px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,1212) scale(1,-1)">Fuse + 5 V buck</text>
+			<text x="55" y="584" style="font-family: Helvetica; font-size: 16px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,1168) scale(1,-1)">No direct pack-to-GPIO</text>
+			<rect x="365" y="520" width="300" height="160" rx="10" ry="10" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: rgb(93%,96%,97%); fill-rule: evenodd;"/>
+			<text x="380" y="650" style="font-family: Helvetica; font-size: 16px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,1300) scale(1,-1)">Main Pico + RTD1 board</text>
+			<text x="380" y="628" style="font-family: Helvetica; font-size: 16px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,1256) scale(1,-1)">Bounded temperature loop</text>
+			<text x="380" y="606" style="font-family: Helvetica; font-size: 16px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,1212) scale(1,-1)">Display / user controls</text>
+			<text x="380" y="584" style="font-family: Helvetica; font-size: 16px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,1168) scale(1,-1)">UART + health pulse</text>
+			<rect x="780" y="520" width="300" height="160" rx="10" ry="10" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: rgb(93%,96%,97%); fill-rule: evenodd;"/>
+			<text x="795" y="650" style="font-family: Helvetica; font-size: 16px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,1300) scale(1,-1)">Supervisor Pico + RTD2</text>
+			<text x="795" y="628" style="font-family: Helvetica; font-size: 16px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,1256) scale(1,-1)">Independent acquisition</text>
+			<text x="795" y="606" style="font-family: Helvetica; font-size: 16px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,1212) scale(1,-1)">Setting / fault checks</text>
+			<text x="795" y="584" style="font-family: Helvetica; font-size: 16px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,1168) scale(1,-1)">Relay control</text>
+			<rect x="1130" y="520" width="230" height="160" rx="10" ry="10" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: rgb(93%,96%,97%); fill-rule: evenodd;"/>
+			<text x="1145" y="650" style="font-family: Helvetica; font-size: 16px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,1300) scale(1,-1)">Insulated heater</text>
+			<text x="1145" y="628" style="font-family: Helvetica; font-size: 16px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,1256) scale(1,-1)">Brass contact end</text>
+			<text x="1145" y="606" style="font-family: Helvetica; font-size: 16px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,1212) scale(1,-1)">Two sensors</text>
+			<text x="1145" y="584" style="font-family: Helvetica; font-size: 16px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,1168) scale(1,-1)">Lock + identity</text>
+			<rect x="365" y="250" width="300" height="150" rx="10" ry="10" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: rgb(93%,96%,97%); fill-rule: evenodd;"/>
+			<text x="380" y="370" style="font-family: Helvetica; font-size: 16px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,740) scale(1,-1)">TC4420 + IRLZ44N</text>
+			<text x="380" y="348" style="font-family: Helvetica; font-size: 16px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,696) scale(1,-1)">PWM return switch</text>
+			<text x="380" y="326" style="font-family: Helvetica; font-size: 16px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,652) scale(1,-1)">Gate pull-downs</text>
+			<text x="380" y="304" style="font-family: Helvetica; font-size: 16px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,608) scale(1,-1)">5 V gate drive</text>
+			<rect x="780" y="250" width="300" height="150" rx="10" ry="10" style="stroke: rgb(3%,49%,51%); stroke-linecap: butt; stroke-width: 2; fill: rgb(93%,96%,97%); fill-rule: evenodd;"/>
+			<text x="795" y="370" style="font-family: Helvetica; font-size: 16px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,740) scale(1,-1)">K1 high-side relay</text>
+			<text x="795" y="348" style="font-family: Helvetica; font-size: 16px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,696) scale(1,-1)">PN2222ABU driver</text>
+			<text x="795" y="326" style="font-family: Helvetica; font-size: 16px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,652) scale(1,-1)">COOL/dock/lock contacts</text>
+			<text x="795" y="304" style="font-family: Helvetica; font-size: 16px;fill: rgb(3%,49%,51%); stroke:none;" transform="translate(0,608) scale(1,-1)">in coil supply chain</text>
+			<polyline points="270 600, 365 600" style="stroke: rgb(81%,44%,14%); stroke-linecap: butt; stroke-width: 3; fill: None; fill-rule: evenodd;"/>
+			<polyline points="665 600, 780 600" style="stroke: rgb(18%,48%,69%); stroke-linecap: butt; stroke-width: 3; fill: None; fill-rule: evenodd;"/>
+			<polyline points="665 570, 780 570" style="stroke: rgb(18%,48%,69%); stroke-linecap: butt; stroke-width: 3; fill: None; fill-rule: evenodd;"/>
+			<polyline points="510 520, 510 400" style="stroke: rgb(81%,44%,14%); stroke-linecap: butt; stroke-width: 3; fill: None; fill-rule: evenodd;"/>
+			<polyline points="930 520, 930 400" style="stroke: rgb(63%,24%,25%); stroke-linecap: butt; stroke-width: 3; fill: None; fill-rule: evenodd;"/>
+			<polyline points="1080 320, 1245 320, 1245 520" style="stroke: rgb(81%,44%,14%); stroke-linecap: butt; stroke-width: 3; fill: None; fill-rule: evenodd;"/>
+			<polyline points="365 300, 305 300, 305 455, 1220 455, 1220 520" style="stroke: rgb(81%,44%,14%); stroke-linecap: butt; stroke-width: 3; fill: None; fill-rule: evenodd;"/>
+			<text x="50" y="150" style="font-family: Helvetica; font-size: 18px;fill: rgb(9%,20%,28%); stroke:none;" transform="translate(0,300) scale(1,-1)">Heater power path: fused pack -&gt; normally-open K1 -&gt; heater -&gt; Q1 -&gt; power return.</text>
+			<text x="50" y="126" style="font-family: Helvetica; font-size: 18px;fill: rgb(9%,20%,28%); stroke:none;" transform="translate(0,252) scale(1,-1)">Two sensor interfaces use separate 3V3 regulators; controllers share a defined ground and controls via branch resistors.</text>
+			<text x="50" y="102" style="font-family: Helvetica; font-size: 18px;fill: rgb(9%,20%,28%); stroke:none;" transform="translate(0,204) scale(1,-1)">The module architecture is larger than the future handheld concept. No patient-use or manufacturing release is implied.</text>
+		</g>
+	</g>
+</svg>

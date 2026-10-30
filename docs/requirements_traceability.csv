@@ -1,0 +1,12 @@
+Requirement,Description,Evidence_type,Evidence,Status,Limit
+R01,Exactly five selectable presets,Host,tests/test_core.py: test_removed_300c_preset_is_rejected,See verification.json,No clinical dose validation
+R02,COOL disables and prevents automatic restart,Host / physical,tests/test_app_integration.py and core tests,Host tested; physical open,Physical coil release/stored heat unmeasured
+R03,Supervisor requires main permit,Host,tests/test_audit_regressions.py: SupervisorPermitTests,Host tested,No independence certification
+R04,Reject malformed provisioning and measurements,Host,tests/test_audit_regressions.py: ProvisionTests,Host tested,Record name does not prove calibration
+R05,BOM/net/Pico/sensor records agree,Host / design,tests/test_design.py and test_hardware_audit.py,Cross-file tested,Physical pin/package verification open
+R06,Valid source package and retained local commissioning,Host tools,tests/test_tooling_audit.py,Host tested,Public-content review remains owner task
+R07,Measured working-face control and cutoff,Physical,Approved thermal/fault protocol required,NOT EXECUTED,Release blocker
+R08,Battery/charger and wiring protection,Physical / supplier,Pack/fuse/charger test programme,NOT EXECUTED,Release blocker
+R09,Qualified brass/sterilizable cartridge,Supplier / biological,Finished-device material/reprocessing programme,NOT EXECUTED,Release blocker
+R10,Fabrication-ready PCB and mechanical fit,EDA / physical,docs/records/native-cad-checks.json; mechanical-checks.json; CAM and physical fit tests,Carrier routed; native checks PASS; CAM/physical fit NOT EXECUTED,Low-current carrier only; physical/integrated-product release blocker
+R11,Clinical claims and medical authorization,Clinical / regulatory,Indication-specific approved programme,NOT EXECUTED,Release blocker

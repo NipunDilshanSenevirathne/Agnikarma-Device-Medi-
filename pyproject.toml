@@ -1,0 +1,9 @@
+[project]
+name = "agni-karma"
+version = "0.5.0"
+description = "Dual-controller thermal applicator prototype source and engineering records"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.ruff]
+line-length = 100
