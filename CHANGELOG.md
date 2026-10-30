@@ -1,4 +1,9 @@
 # Changelog
+## Unreleased - CI diagnostics
+- Print failed verification commands and captured child output directly in CI; keep UTF-8 diagnostic records.
+- Preserve each matrix job's verification records as an Actions artifact and allow other matrix jobs to finish after a failure.
+- Update checkout/setup actions to Node.js 24 versions and add a regression test for failure output and stop-on-failure behaviour.
+
 ## 0.5.0 - 2026-10-31
 - Routed the low-current P3R1 carrier; added matched schematic, project-local libraries and connector/carrier BOM.
 - Ran native KiCad 10.0.8: both ERCs, carrier DRC and schematic parity clean; exported Gerbers, separate plated/non-plated drills, PDFs, STEP and native PCB images.

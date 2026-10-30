@@ -644,7 +644,7 @@ python tools/verify.py
 
 If your platform uses `python3` or `py -3` for the intended interpreter, use that command consistently. Optional source-generation tools are described later; do not install them merely to run host tests.
 
-The current verification run passes **63 test methods and six commands**:
+The current verification run passes **64 test methods and six commands**:
 
 | Command executed by the verifier | Scope |
 |---|---|
@@ -905,7 +905,7 @@ After changing a sensor, module reference, cartridge, joining process, thermal i
 
 | Evidence | Recorded result | What it establishes |
 |---|---|---|
-| [Host run](docs/records/verification.json) and [full log](docs/records/host-checks.txt) | **63 tests; six commands pass** | CPython host behaviour, mocks, source consistency, deployment and packaging within the tested cases |
+| [Host run](docs/records/verification.json) and [full log](docs/records/host-checks.txt) | **64 tests; six commands pass** | CPython host behaviour, mocks, source consistency, deployment and packaging within the tested cases |
 | [Carrier ERC](docs/records/carrier-erc.json) | **0 reported findings** | Generic passive carrier schematic checks |
 | [Full-system ERC](docs/records/module-system-erc.json) | **0 reported findings** | Generic passive module/terminal schematic checks |
 | [Carrier DRC](docs/records/carrier-drc.json) | **0 reported findings; 0 unconnected items; 0 schematic parity issues** | Carrier checks using supplied rules and matched schematic |
@@ -1034,6 +1034,8 @@ git commit -m "Add Agni Karma prototype source and engineering records"
 Create an empty repository in your own GitHub account and use its supplied remote/push instructions. This package does not invent a remote, publish the project or send information to another person.
 
 The included [CI workflow](.github/workflows/check.yml) runs verification and packaging on pushes, pull requests or manual dispatch. Its matrix is Windows/Ubuntu and Python 3.10/3.11/3.12. The workflow is supplied source; a local run is not a completed GitHub Actions run. It checks stored native evidence, not native CAD tool installation or physical hardware.
+
+If a run fails, expand **Verify source** in its failed job. The verifier prints the failed command, exit code and captured stdout/stderr there. It also writes [the full log](docs/records/host-checks.txt) and [the result record](docs/records/verification.json). Each matrix job uploads these two files as a `host-checks-...` artifact for seven days, including after a verification failure. Other matrix jobs continue independently. An old red commit status remains part of that commit's history; check the new commit after pushing an update. See [GitHub troubleshooting](docs/github.md#diagnose-a-red-actions-check).
 
 When changing electrical or control behaviour, update affected records and tests together, retain exact measured revision/configuration identifiers and review the risk/traceability impact. Use [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md) and the issue/PR templates. Public visibility is not medical approval or a manufacturing instruction.
 

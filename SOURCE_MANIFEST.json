@@ -21,8 +21,8 @@
   },
   {
     "path": ".github/workflows/check.yml",
-    "bytes": 468,
-    "sha256": "88a6f2175178e314867b660fdcd6bf452462cc57f2b338d090293d728b294588"
+    "bytes": 924,
+    "sha256": "63ac5acc4bb3864ae14932aeb23354922773ccb0e0d0fad87c12db14b667f330"
   },
   {
     "path": ".gitignore",
@@ -46,8 +46,8 @@
   },
   {
     "path": "CHANGELOG.md",
-    "bytes": 2187,
-    "sha256": "f5097ee033653ec26ba776edbfbdb2534962a5c0dd27ede09d37030394fb96ae"
+    "bytes": 2588,
+    "sha256": "9c336a07bdf6d5d556c9a828e369ad8f8c0dabb7c24fca94a374c053514ca4af"
   },
   {
     "path": "CONTRIBUTING.md",
@@ -96,8 +96,8 @@
   },
   {
     "path": "docs/github.md",
-    "bytes": 1613,
-    "sha256": "e106cd0401678a7252770c86d0a007bfb6ce438c4a599159e5ce60a38f85f7e4"
+    "bytes": 2805,
+    "sha256": "74894e19e45d9cb0475eb07c57bfba72c8bc2fdb3720ae912889e81273372cee"
   },
   {
     "path": "docs/image-attribution.md",
@@ -236,8 +236,8 @@
   },
   {
     "path": "docs/records/host-checks.txt",
-    "bytes": 8336,
-    "sha256": "98bd64f57b1884145dad60f4f2202f0d4848f1405557d92e988d01155f80a222"
+    "bytes": 8566,
+    "sha256": "547a257762e4723badc10d9ef2a36812a6e5bbba26afc31bfa1d254fbc558afb"
   },
   {
     "path": "docs/records/mechanical-checks.json",
@@ -262,7 +262,7 @@
   {
     "path": "docs/records/verification.json",
     "bytes": 1051,
-    "sha256": "437bcef0196f372db07e90f75cc96f390d537c95186717adecc9d59f2321d593"
+    "sha256": "d8fd8d8938ffc93acf3699807da7933afae68ce63872438acc03d2d97a2fa953"
   },
   {
     "path": "docs/requirements_traceability.csv",
@@ -631,8 +631,8 @@
   },
   {
     "path": "README.md",
-    "bytes": 114209,
-    "sha256": "e52a46ab0630343ffd3d6ee8615c5f50d409c288b232d76b6f382b70d0269fb3"
+    "bytes": 114826,
+    "sha256": "3b72348a9a3d938e3d4b460fba6539dd1bffe891e96c8120f0a9d391fd92bb28"
   },
   {
     "path": "requirements-diagrams.txt",
@@ -686,8 +686,8 @@
   },
   {
     "path": "tests/test_tooling_audit.py",
-    "bytes": 2195,
-    "sha256": "4bc5e9419b07cfbf451d0d6e5aeefd56982110f437dbcaf315a59a71c0553167"
+    "bytes": 3680,
+    "sha256": "482202d3b2e66d36ef4e36706915bde843a08b509cb8da75682e2d493b0b9b1f"
   },
   {
     "path": "tools/__init__.py",
@@ -761,8 +761,8 @@
   },
   {
     "path": "tools/verify.py",
-    "bytes": 2221,
-    "sha256": "f38df6ca1e69ac6612c1e2ca98c13eb9ff71a3bb61a2ed8be08fcaf961db6299"
+    "bytes": 2625,
+    "sha256": "0cd1a8609c99623c395fbb852086ba5a497da34114a74a2e087c926a9a1ebd96"
   },
   {
     "path": "tools/wiring_drawing.py",

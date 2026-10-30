@@ -64,9 +64,10 @@ test_native_pico_pin_assignment_matches_independent_gpio_schedule (test_native_c
 test_native_supplies_and_all_ground_pins (test_native_connectivity.NativeConnectivity.test_native_supplies_and_all_ground_pins) ... ok
 test_deploy_preserves_existing_provisioning_unless_reset (test_tooling_audit.ToolingAuditTests.test_deploy_preserves_existing_provisioning_unless_reset) ... ok
 test_package_has_no_duplicate_manifest_or_private_files (test_tooling_audit.ToolingAuditTests.test_package_has_no_duplicate_manifest_or_private_files) ... ok
+test_verifier_exposes_child_failure_and_preserves_diagnostics (test_tooling_audit.ToolingAuditTests.test_verifier_exposes_child_failure_and_preserves_diagnostics) ... ok
 
 ----------------------------------------------------------------------
-Ran 63 tests in 0.924s
+Ran 64 tests in 0.834s
 
 OK
 
@@ -90,11 +91,11 @@ Five hypothetical simulations written to build\simulation
 EXIT: 0
 
 COMMAND: python -m tools.deploy main --out build/verification-upload
-Prepared build\verification-upload\main with disabled defaults. See docs/firmware.md.
+Prepared build\verification-upload\main and preserved existing provision.json. Review that record before uploading.
 
 EXIT: 0
 
 COMMAND: python -m tools.deploy supervisor --out build/verification-upload
-Prepared build\verification-upload\supervisor with disabled defaults. See docs/firmware.md.
+Prepared build\verification-upload\supervisor and preserved existing provision.json. Review that record before uploading.
 
 EXIT: 0
